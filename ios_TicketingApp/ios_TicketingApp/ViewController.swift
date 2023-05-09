@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let user = User(username: "TestUser1", password: "1234")
+        PersistenceManager.shared.createUser(user: user)
     }
 
 

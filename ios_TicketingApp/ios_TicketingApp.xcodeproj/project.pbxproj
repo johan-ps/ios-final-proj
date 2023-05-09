@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40FAB4BB2A0A0BAC00308573 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FAB4BA2A0A0BAC00308573 /* UserController.swift */; };
+		40FAB4BD2A0A0BBA00308573 /* ConcertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FAB4BC2A0A0BBA00308573 /* ConcertController.swift */; };
+		40FAB4C02A0A0CFB00308573 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FAB4BF2A0A0CFB00308573 /* User.swift */; };
+		40FAB4C22A0A0F4000308573 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FAB4C12A0A0F4000308573 /* PersistenceManager.swift */; };
 		76EF58A82A0A0A0E00D1EBF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF58A72A0A0A0E00D1EBF4 /* AppDelegate.swift */; };
 		76EF58AA2A0A0A0E00D1EBF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF58A92A0A0A0E00D1EBF4 /* SceneDelegate.swift */; };
 		76EF58AC2A0A0A0E00D1EBF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF58AB2A0A0A0E00D1EBF4 /* ViewController.swift */; };
@@ -16,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40FAB4B52A0A0B2B00308573 /* users.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = users.geojson; sourceTree = "<group>"; };
+		40FAB4B62A0A0B5D00308573 /* concerts.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = concerts.geojson; sourceTree = "<group>"; };
+		40FAB4BA2A0A0BAC00308573 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		40FAB4BC2A0A0BBA00308573 /* ConcertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertController.swift; sourceTree = "<group>"; };
+		40FAB4BF2A0A0CFB00308573 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		40FAB4C12A0A0F4000308573 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		76EF58A42A0A0A0E00D1EBF4 /* ios_TicketingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_TicketingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EF58A72A0A0A0E00D1EBF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76EF58A92A0A0A0E00D1EBF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +47,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40FAB4B32A0A0A6300308573 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				40FAB4B92A0A0B9D00308573 /* Controllers */,
+				40FAB4B42A0A0B0E00308573 /* Data */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		40FAB4B42A0A0B0E00308573 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				40FAB4B52A0A0B2B00308573 /* users.geojson */,
+				40FAB4B62A0A0B5D00308573 /* concerts.geojson */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		40FAB4B92A0A0B9D00308573 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40FAB4BA2A0A0BAC00308573 /* UserController.swift */,
+				40FAB4BC2A0A0BBA00308573 /* ConcertController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		40FAB4BE2A0A0CF200308573 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40FAB4BF2A0A0CFB00308573 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		76EF589B2A0A0A0E00D1EBF4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +101,8 @@
 		76EF58A62A0A0A0E00D1EBF4 /* ios_TicketingApp */ = {
 			isa = PBXGroup;
 			children = (
+				40FAB4BE2A0A0CF200308573 /* Model */,
+				40FAB4B32A0A0A6300308573 /* Backend */,
 				76EF58A72A0A0A0E00D1EBF4 /* AppDelegate.swift */,
 				76EF58A92A0A0A0E00D1EBF4 /* SceneDelegate.swift */,
 				76EF58AB2A0A0A0E00D1EBF4 /* ViewController.swift */,
@@ -63,6 +110,7 @@
 				76EF58B02A0A0A1000D1EBF4 /* Assets.xcassets */,
 				76EF58B22A0A0A1000D1EBF4 /* LaunchScreen.storyboard */,
 				76EF58B52A0A0A1000D1EBF4 /* Info.plist */,
+				40FAB4C12A0A0F4000308573 /* PersistenceManager.swift */,
 			);
 			path = ios_TicketingApp;
 			sourceTree = "<group>";
@@ -139,7 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				76EF58AC2A0A0A0E00D1EBF4 /* ViewController.swift in Sources */,
+				40FAB4C22A0A0F4000308573 /* PersistenceManager.swift in Sources */,
 				76EF58A82A0A0A0E00D1EBF4 /* AppDelegate.swift in Sources */,
+				40FAB4C02A0A0CFB00308573 /* User.swift in Sources */,
+				40FAB4BD2A0A0BBA00308573 /* ConcertController.swift in Sources */,
+				40FAB4BB2A0A0BAC00308573 /* UserController.swift in Sources */,
 				76EF58AA2A0A0A0E00D1EBF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
