@@ -29,20 +29,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_TicketingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConcertBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Vg-na-dCB">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="up-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="g5p-jL-EwL">
-                                <rect key="frame" x="0.0" y="80" width="430" height="300"/>
+                                <rect key="frame" x="0.0" y="183" width="430" height="300"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Wzq-1R-zQ9">
-                                <rect key="frame" x="50" y="430" width="330" height="292"/>
+                                <rect key="frame" x="50" y="533" width="330" height="165"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdN-Ph-5q1">
-                                        <rect key="frame" x="0.0" y="0.0" width="330" height="214.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="87.333333333333329"/>
                                         <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="titleShadowOffset" width="15" height="15"/>
@@ -55,7 +55,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hR-ga-mk4">
-                                        <rect key="frame" x="0.0" y="244.33333333333334" width="330" height="47.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="117.33333333333339" width="330" height="47.666666666666671"/>
                                         <color key="backgroundColor" red="0.65098041299999998" green="0.42352938649999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="titleShadowOffset" width="15" height="15"/>
@@ -99,60 +99,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Upcoming Gigs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nko-YQ-PeT">
-                                <rect key="frame" x="20" y="99.666666666666671" width="390" height="53.000000000000014"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConcertBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSY-Eq-sRh">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR UPCOMING GIGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nko-YQ-PeT">
+                                <rect key="frame" x="20" y="97.666666666666671" width="390" height="32.666666666666671"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-kk-EFI">
-                                <rect key="frame" x="20" y="182.66666666666669" width="390" height="630.33333333333326"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-RV-6S9">
-                                <rect key="frame" x="277" y="50" width="133" height="24.666666666666671"/>
+                                <rect key="frame" x="291" y="20" width="119" height="27.666666666666671"/>
                                 <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="titleShadowOffset" width="15" height="15"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="ACCOUNT DETAILS">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                    <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="10"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="zUh-ez-TbN" kind="show" id="cdI-aA-jLu"/>
+                                    <segue destination="8X2-Ng-H98" kind="show" id="vbn-HD-JK0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPs-nk-rFd">
+                                <rect key="frame" x="34" y="33.333333333333329" width="137" height="34.333333333333329"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TEST TICKETS"/>
+                                <connections>
+                                    <segue destination="h0g-LR-qHC" kind="show" id="bFW-Lw-4cy"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-kk-EFI">
+                                <rect key="frame" x="20" y="145.33333333333331" width="390" height="736.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hk6-vY-meX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EbI-kk-EFI" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="12f-v9-nmB"/>
-                            <constraint firstItem="nko-YQ-PeT" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="61p-a3-3pU"/>
-                            <constraint firstItem="EbI-kk-EFI" firstAttribute="top" secondItem="nko-YQ-PeT" secondAttribute="bottom" constant="30" id="6kt-1D-M5c"/>
-                            <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="nko-YQ-PeT" secondAttribute="trailing" constant="20" id="Jfl-Sd-d2C"/>
-                            <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="EbI-kk-EFI" secondAttribute="trailing" constant="20" id="N3x-qh-iAe"/>
-                            <constraint firstItem="hk6-vY-meX" firstAttribute="bottom" secondItem="EbI-kk-EFI" secondAttribute="bottom" constant="60" id="R4y-bE-WEa"/>
-                            <constraint firstItem="nko-YQ-PeT" firstAttribute="top" secondItem="BgJ-RV-6S9" secondAttribute="bottom" constant="25" id="jch-2w-Fde"/>
-                            <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="BgJ-RV-6S9" secondAttribute="trailing" constant="20" id="qJM-ze-8Tl"/>
-                            <constraint firstItem="BgJ-RV-6S9" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="277" id="yLE-Up-vGN"/>
-                            <constraint firstItem="BgJ-RV-6S9" firstAttribute="top" secondItem="hk6-vY-meX" secondAttribute="top" constant="50" id="ydG-li-irs"/>
+                            <constraint firstItem="nko-YQ-PeT" firstAttribute="top" secondItem="BgJ-RV-6S9" secondAttribute="bottom" constant="50" id="Avz-vt-3Qd"/>
+                            <constraint firstItem="nko-YQ-PeT" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="BiK-LW-fCc"/>
+                            <constraint firstItem="BgJ-RV-6S9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PPs-nk-rFd" secondAttribute="trailing" constant="8" symbolic="YES" id="Fav-qZ-1vf"/>
+                            <constraint firstItem="iSY-Eq-sRh" firstAttribute="top" secondItem="WNH-Ia-zPT" secondAttribute="top" id="FkB-WE-KnW"/>
+                            <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="BgJ-RV-6S9" secondAttribute="trailing" constant="20" id="HwU-9B-O4e"/>
+                            <constraint firstItem="EbI-kk-EFI" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="L2V-IN-3B2"/>
+                            <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="EbI-kk-EFI" secondAttribute="trailing" constant="20" id="RpB-4j-yhG"/>
+                            <constraint firstItem="iSY-Eq-sRh" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" id="SUv-Pt-t0Q"/>
+                            <constraint firstItem="nko-YQ-PeT" firstAttribute="top" secondItem="PPs-nk-rFd" secondAttribute="bottom" constant="30" id="Sap-cP-0fi"/>
+                            <constraint firstAttribute="bottom" secondItem="iSY-Eq-sRh" secondAttribute="bottom" id="WF0-5a-9G5"/>
+                            <constraint firstItem="iSY-Eq-sRh" firstAttribute="trailing" secondItem="hk6-vY-meX" secondAttribute="trailing" id="XbT-WE-caL"/>
+                            <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="nko-YQ-PeT" secondAttribute="trailing" constant="20" id="Y0v-sw-eKk"/>
+                            <constraint firstItem="PPs-nk-rFd" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="34" id="ZKs-EC-kGr"/>
+                            <constraint firstItem="EbI-kk-EFI" firstAttribute="top" secondItem="nko-YQ-PeT" secondAttribute="bottom" constant="15" id="aq0-Hb-UHX"/>
+                            <constraint firstItem="EbI-kk-EFI" firstAttribute="top" secondItem="nko-YQ-PeT" secondAttribute="bottom" constant="15" id="jM7-3f-nN2"/>
+                            <constraint firstItem="hk6-vY-meX" firstAttribute="bottom" secondItem="EbI-kk-EFI" secondAttribute="bottom" constant="40" id="oFQ-C6-lVa"/>
+                            <constraint firstItem="BgJ-RV-6S9" firstAttribute="top" secondItem="hk6-vY-meX" secondAttribute="top" constant="20" id="vsu-i3-Ica"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1VW-3z-JAj">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="k3e-Vj-mH7">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="BNT-uC-S5f">
-                                <rect key="frame" x="283" y="0.0" width="127" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="titleShadowOffset" width="15" height="15"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Account">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                </buttonConfiguration>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="1VW-3z-JAj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iO8-sY-He8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,23 +167,23 @@
             <objects>
                 <viewController id="h0g-LR-qHC" customClass="TicketViewController" customModule="ios_TicketingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fui-IT-75c">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TicketBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="YAi-jD-BMx">
-                                <rect key="frame" x="20" y="118" width="390" height="756"/>
+                                <rect key="frame" x="20" y="59" width="390" height="839"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xCN-0I-MS1">
-                                <rect key="frame" x="71" y="740" width="288" height="44"/>
+                                <rect key="frame" x="71" y="740" width="288" height="117"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CONCERT NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2g-F9-vIE">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="44.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="j2v-I8-4ua">
-                                        <rect key="frame" x="0.0" y="10" width="288" height="24"/>
+                                        <rect key="frame" x="0.0" y="54.333333333333371" width="288" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DD/MM/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93e-3m-JgS">
                                                 <rect key="frame" x="0.0" y="0.0" width="121.66666666666667" height="24"/>
@@ -196,7 +200,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="General Admission x 'X'" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fu8-UM-QWz">
-                                        <rect key="frame" x="0.0" y="44" width="288" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="88.333333333333371" width="288" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -204,16 +208,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="naO-tF-N5Z">
-                                <rect key="frame" x="-14" y="357" width="458" height="198.33333333333326"/>
+                                <rect key="frame" x="-14" y="357" width="458" height="208.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CONCERT NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzl-fK-533">
-                                        <rect key="frame" x="0.0" y="0.0" width="458" height="63"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="458" height="73"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="61"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ire-3p-pAM">
-                                        <rect key="frame" x="0.0" y="90" width="458" height="43"/>
+                                        <rect key="frame" x="0.0" y="100" width="458" height="43"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DD/MM/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60Y-Dd-HDG">
                                                 <rect key="frame" x="0.0" y="0.0" width="286" height="43"/>
@@ -230,7 +234,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="General Admission x 'X'" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAv-QT-dhQ">
-                                        <rect key="frame" x="0.0" y="160" width="458" height="38.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="170" width="458" height="38.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -275,68 +279,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHu-jM-7Im">
-                                <rect key="frame" x="20" y="59" width="390" height="227"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="UPZ-cW-Z29">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Concert Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0E-M1-4y6">
-                                <rect key="frame" x="79" y="310" width="273" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ticket Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbr-IQ-lqF">
-                                <rect key="frame" x="153" y="711" width="126" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$XX.XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CK0-XD-lND">
-                                <rect key="frame" x="173" y="749" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31P-R4-dAg">
-                                <rect key="frame" x="287" y="371" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Concert Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIT-08-aSw">
-                                <rect key="frame" x="79" y="409" width="273" height="260"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLK-Bi-Tsp">
-                                <rect key="frame" x="111" y="812" width="210" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="titleShadowOffset" width="15" height="15"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="BUY NOW">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DD/MM/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RU-81-LxU">
-                                <rect key="frame" x="49" y="371" width="153" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="jh1-XF-PLE">
+                                <rect key="frame" x="20" y="163" width="390" height="636"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="abx-dS-ulg">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="233"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gHu-jM-7Im">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="113.33333333333333"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Concert Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0E-M1-4y6">
+                                                <rect key="frame" x="0.0" y="126.33333333333333" width="390" height="59.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="44"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DD/MM/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RU-81-LxU">
+                                                <rect key="frame" x="0.0" y="199" width="390" height="34"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Concert Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIT-08-aSw">
+                                        <rect key="frame" x="0.0" y="317" width="390" height="23"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-3l-fv5">
+                                        <rect key="frame" x="0.0" y="424" width="390" height="68"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticket Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbr-IQ-lqF">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="34"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$XX.XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CK0-XD-lND">
+                                                <rect key="frame" x="0.0" y="34" width="390" height="34"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLK-Bi-Tsp">
+                                        <rect key="frame" x="0.0" y="576" width="390" height="60"/>
+                                        <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="titleShadowOffset" width="15" height="15"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="BUY NOW">
+                                            <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="34"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="DtN-uC-pkl" kind="show" id="dbt-fF-IMj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eRL-lD-cQa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jh1-XF-PLE" secondAttribute="trailing" constant="20" id="6S3-x0-r8D"/>
+                            <constraint firstItem="eRL-lD-cQa" firstAttribute="bottom" secondItem="jh1-XF-PLE" secondAttribute="bottom" constant="50" id="PJT-vm-MdS"/>
+                            <constraint firstItem="jh1-XF-PLE" firstAttribute="leading" secondItem="eRL-lD-cQa" secondAttribute="leading" constant="20" id="Wrp-lU-SfU"/>
+                            <constraint firstItem="jh1-XF-PLE" firstAttribute="top" secondItem="eRL-lD-cQa" secondAttribute="top" constant="60" id="wfX-5M-Ney"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Your Concerts" id="IaY-YZ-Gbs"/>
+                    <navigationItem key="navigationItem" id="a8h-SM-MaV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfw-PD-tTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -350,193 +369,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tM4-oY-Aqp">
-                                <rect key="frame" x="20" y="59" width="390" height="227"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ogt-4s-9cb">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Concert Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCx-Gn-M75">
-                                <rect key="frame" x="79" y="310" width="273" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DD/MM/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld9-fQ-5cb">
-                                <rect key="frame" x="54" y="371" width="153" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1J6-4q-ycX">
-                                <rect key="frame" x="287" y="371" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vud-IP-nVJ">
-                                <rect key="frame" x="168" y="554" width="94" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="X Tickets @ $XX.XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdD-gA-jXP">
-                                <rect key="frame" x="70" y="480" width="290" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$XXX.XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv8-fy-6yS">
-                                <rect key="frame" x="70" y="640" width="290" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-fk-FgF">
+                                <rect key="frame" x="20" y="163" width="390" height="636"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="aeX-DC-1kc">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="288"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tM4-oY-Aqp">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="172.33333333333334"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Concert Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCx-Gn-M75">
+                                                <rect key="frame" x="0.0" y="183.33333333333331" width="390" height="59.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="44"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DD/MM/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld9-fQ-5cb">
+                                                <rect key="frame" x="0.0" y="254" width="390" height="34"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="GMn-QX-uPo">
+                                        <rect key="frame" x="0.0" y="301" width="390" height="185"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X Tickets @ $XX.XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdD-gA-jXP">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="39.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vud-IP-nVJ">
+                                                <rect key="frame" x="0.0" y="64.333333333333371" width="390" height="32"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stepper>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$XXX.XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv8-fy-6yS">
+                                                <rect key="frame" x="0.0" y="121.33333333333339" width="390" height="63.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdu-Lt-rQr">
+                                        <rect key="frame" x="0.0" y="499" width="390" height="137"/>
+                                        <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="titleShadowOffset" width="15" height="15"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="CONFIRM">
+                                            <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="34"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="StL-bb-C8e" kind="show" id="J4M-3a-uaN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tj7-vy-jLq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="MdZ-fk-FgF" firstAttribute="leading" secondItem="tj7-vy-jLq" secondAttribute="leading" constant="20" id="4je-QE-0TV"/>
+                            <constraint firstItem="tj7-vy-jLq" firstAttribute="trailing" secondItem="MdZ-fk-FgF" secondAttribute="trailing" constant="20" id="CSM-te-EwS"/>
+                            <constraint firstItem="tj7-vy-jLq" firstAttribute="bottom" secondItem="MdZ-fk-FgF" secondAttribute="bottom" constant="50" id="GuT-Z6-Kuh"/>
+                            <constraint firstItem="MdZ-fk-FgF" firstAttribute="top" secondItem="tj7-vy-jLq" secondAttribute="top" constant="60" id="T04-sI-kJT"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="p9n-Mv-Kmu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LiZ-Cv-oC5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3559.5348837209303" y="-120.38626609442061"/>
-        </scene>
-        <!--AccountDetails-->
-        <scene sceneID="JTX-3m-gsf">
-            <objects>
-                <viewController title="AccountDetails" id="zUh-ez-TbN" customClass="AccountDetailsViewController" customModule="ios_TicketingApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fwk-Hz-Xf8">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="A5X-bi-Tfi">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="vou-VU-Rdc">
-                                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="kPK-qS-Tns">
-                                        <rect key="frame" x="20" y="17" width="390" height="823"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="3Ti-lA-f05">
-                                        <rect key="frame" x="50" y="50" width="330" height="621"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="8zZ-Qz-5f2">
-                                                <rect key="frame" x="0.0" y="0.0" width="330" height="245"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWN-yJ-Kcd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
-                                                        <color key="textColor" red="0.25098040700000002" green="0.36078432199999999" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vjl-q8-zKI" userLabel="First Name">
-                                                        <rect key="frame" x="0.0" y="53.666666666666671" width="330" height="191.33333333333331"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="K2x-Me-Vqt">
-                                                <rect key="frame" x="0.0" y="280" width="330" height="81.666666666666686"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwd-EU-l2z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
-                                                        <color key="textColor" red="0.25098040700000002" green="0.36078432199999999" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WmO-3l-qib" userLabel="First Name">
-                                                        <rect key="frame" x="0.0" y="47.666666666666686" width="330" height="34"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eAF-VJ-5nm">
-                                                <rect key="frame" x="0.0" y="396.66666666666669" width="330" height="94.666666666666686"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0a-6V-EJ8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
-                                                        <color key="textColor" red="0.25098040700000002" green="0.36078432199999999" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BIY-0S-NuQ" userLabel="First Name">
-                                                        <rect key="frame" x="0.0" y="60.666666666666629" width="330" height="34"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pvH-cq-FOm">
-                                                <rect key="frame" x="0.0" y="526.33333333333337" width="330" height="94.666666666666629"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS1-4m-OaK">
-                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
-                                                        <color key="textColor" red="0.25098040700000002" green="0.36078432199999999" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-Iv-Ql2" userLabel="First Name">
-                                                        <rect key="frame" x="0.0" y="60.666666666666629" width="330" height="34"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="K2x-Me-Vqt" firstAttribute="top" secondItem="3Ti-lA-f05" secondAttribute="top" constant="280" id="GRw-Ad-28k"/>
-                                        </constraints>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVI-X5-rnM">
-                                        <rect key="frame" x="50" y="751" width="330" height="52"/>
-                                        <color key="backgroundColor" red="0.65098041299999998" green="0.42352938649999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="titleShadowOffset" width="15" height="15"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="SIGN UP" titleAlignment="center">
-                                            <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="28"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="signUpButtonPressed:" destination="2DU-LZ-0Zl" eventType="touchUpInside" id="Rxa-Py-k3J"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <viewLayoutGuide key="safeArea" id="Nkq-je-oe8"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="3Ti-lA-f05" firstAttribute="leading" secondItem="Nkq-je-oe8" secondAttribute="leading" constant="50" id="0DI-ud-3As"/>
-                                    <constraint firstItem="Nkq-je-oe8" firstAttribute="bottom" secondItem="LVI-X5-rnM" secondAttribute="bottom" constant="70" id="0Za-cp-0lN"/>
-                                    <constraint firstItem="kPK-qS-Tns" firstAttribute="leading" secondItem="Nkq-je-oe8" secondAttribute="leading" constant="20" id="7XX-4G-yUu"/>
-                                    <constraint firstItem="Nkq-je-oe8" firstAttribute="bottom" secondItem="LVI-X5-rnM" secondAttribute="bottom" constant="70" id="UMN-c0-bZT"/>
-                                    <constraint firstItem="Nkq-je-oe8" firstAttribute="trailing" secondItem="kPK-qS-Tns" secondAttribute="trailing" constant="20" id="VY9-sj-mbB"/>
-                                    <constraint firstItem="LVI-X5-rnM" firstAttribute="trailing" secondItem="3Ti-lA-f05" secondAttribute="trailing" id="WKI-vY-en1"/>
-                                    <constraint firstItem="kPK-qS-Tns" firstAttribute="top" secondItem="Nkq-je-oe8" secondAttribute="top" constant="17" id="Z25-JE-dcj"/>
-                                    <constraint firstItem="vou-VU-Rdc" firstAttribute="top" secondItem="Nkq-je-oe8" secondAttribute="top" id="bTk-4F-kih"/>
-                                    <constraint firstItem="LVI-X5-rnM" firstAttribute="top" secondItem="3Ti-lA-f05" secondAttribute="bottom" constant="80" id="brx-Xh-Yv8"/>
-                                    <constraint firstItem="vou-VU-Rdc" firstAttribute="trailing" secondItem="Nkq-je-oe8" secondAttribute="trailing" id="c3F-ah-deu"/>
-                                    <constraint firstItem="LVI-X5-rnM" firstAttribute="leading" secondItem="3Ti-lA-f05" secondAttribute="leading" id="gIh-zJ-dLy"/>
-                                    <constraint firstAttribute="bottom" secondItem="vou-VU-Rdc" secondAttribute="bottom" id="inY-tb-SOb"/>
-                                    <constraint firstItem="3Ti-lA-f05" firstAttribute="top" secondItem="Nkq-je-oe8" secondAttribute="top" constant="50" id="s4y-qt-wSs"/>
-                                    <constraint firstItem="Nkq-je-oe8" firstAttribute="bottom" secondItem="kPK-qS-Tns" secondAttribute="bottom" constant="33" id="sZ8-27-9Ge"/>
-                                    <constraint firstItem="vou-VU-Rdc" firstAttribute="leading" secondItem="Nkq-je-oe8" secondAttribute="leading" id="wM7-7b-I9L"/>
-                                    <constraint firstItem="Nkq-je-oe8" firstAttribute="trailing" secondItem="3Ti-lA-f05" secondAttribute="trailing" constant="50" id="yd5-uo-UxL"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="wDJ-r5-flX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="VcZ-jp-nqW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hV0-RO-Uiy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1913" y="-1564"/>
         </scene>
         <!--Ticket Purchased View Controller-->
         <scene sceneID="WD5-3C-yLI">
@@ -546,61 +457,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You're Seeing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDZ-Ty-xpA">
-                                <rect key="frame" x="87" y="289" width="257" height="53"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ConcertBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="MeW-ot-iKW">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="952"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Concert Name!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZB-GD-ama">
-                                <rect key="frame" x="73" y="350" width="285" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-4U-jPW">
-                                <rect key="frame" x="106" y="471" width="219" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="titleShadowOffset" width="15" height="15"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="My Concerts">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-yd-cWF">
-                                <rect key="frame" x="106" y="595" width="219" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="titleShadowOffset" width="15" height="15"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Homepage">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
-                                </buttonConfiguration>
-                            </button>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-Ab-ode">
+                                <rect key="frame" x="50" y="303" width="330" height="346"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hqc-eV-7Cp">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="86.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're Seeing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDZ-Ty-xpA">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="43.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="32"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Concert Name!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZB-GD-ama">
+                                                <rect key="frame" x="0.0" y="43.333333333333314" width="330" height="43.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="32"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="biw-rZ-lwe">
+                                        <rect key="frame" x="0.0" y="186.66666666666669" width="330" height="159.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-4U-jPW">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="51.333333333333336"/>
+                                                <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="titleShadowOffset" width="15" height="15"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="MY CONCERTS">
+                                                    <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="25"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="X1J-BS-0zR" kind="show" id="0b1-CY-ADY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-yd-cWF">
+                                                <rect key="frame" x="0.0" y="111.33333333333331" width="330" height="48"/>
+                                                <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="titleShadowOffset" width="15" height="15"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="HOMEPAGE">
+                                                    <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="25"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="VpR-S2-mg6" kind="show" id="V07-xb-JVW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O4a-hZ-wQq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O4a-hZ-wQq" firstAttribute="bottom" secondItem="Z5K-Ab-ode" secondAttribute="bottom" constant="200" id="KZN-Gf-YU2"/>
+                            <constraint firstItem="O4a-hZ-wQq" firstAttribute="trailing" secondItem="Z5K-Ab-ode" secondAttribute="trailing" constant="50" id="LpJ-E9-eOh"/>
+                            <constraint firstItem="Z5K-Ab-ode" firstAttribute="leading" secondItem="O4a-hZ-wQq" secondAttribute="leading" constant="50" id="acm-vN-L8H"/>
+                            <constraint firstItem="O4a-hZ-wQq" firstAttribute="trailing" secondItem="Z5K-Ab-ode" secondAttribute="trailing" constant="50" id="akx-YK-mJr"/>
+                            <constraint firstItem="Z5K-Ab-ode" firstAttribute="top" secondItem="O4a-hZ-wQq" secondAttribute="top" constant="200" id="n3Y-h4-1X6"/>
+                            <constraint firstItem="Z5K-Ab-ode" firstAttribute="leading" secondItem="O4a-hZ-wQq" secondAttribute="leading" constant="50" id="xsg-wG-AUu"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="W7H-J7-w11"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SxQ-GB-N3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4326" y="-120"/>
+            <point key="canvasLocation" x="4325.5813953488368" y="-120.38626609442061"/>
         </scene>
         <!--Concerts View Controller-->
         <scene sceneID="Mr3-ZA-uiP">
             <objects>
                 <viewController storyboardIdentifier="ConcertsViewController" modalTransitionStyle="crossDissolve" id="VpR-S2-mg6" customClass="ConcertsViewController" customModule="ios_TicketingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KBU-qI-AmV">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConcertBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="58A-yK-c0K">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HxZ-jN-fWp">
-                                <rect key="frame" x="20" y="201" width="390" height="661"/>
+                                <rect key="frame" x="20" y="201" width="390" height="671"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3s9-yM-Ucy">
@@ -610,11 +554,8 @@
                                 <size key="titleShadowOffset" width="15" height="15"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="LOG OUT">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                    <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="12"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="Xwf-Zh-Zi5"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axC-rJ-zfX">
                                 <rect key="frame" x="20" y="65" width="124" height="39"/>
@@ -623,19 +564,28 @@
                                 <size key="titleShadowOffset" width="15" height="15"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="MY CONCERTS">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                    <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="12"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="X1J-BS-0zR" kind="show" id="wNM-KM-gFb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey NAME!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H0F-wD-ZAQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEY NAME!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H0F-wD-ZAQ">
                                 <rect key="frame" x="20" y="131" width="390" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-qi-aes">
+                                <rect key="frame" x="221" y="158" width="163" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TEST CONCERT"/>
+                                <connections>
+                                    <segue destination="jgW-py-gQp" kind="show" id="xDP-gi-RHY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ard-cX-iCR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -646,9 +596,13 @@
                             <constraint firstAttribute="trailing" secondItem="axC-rJ-zfX" secondAttribute="trailing" constant="286" id="Jkg-66-ueg"/>
                             <constraint firstItem="axC-rJ-zfX" firstAttribute="leading" secondItem="KBU-qI-AmV" secondAttribute="leading" constant="20" id="Kq3-e8-R9Q"/>
                             <constraint firstAttribute="trailing" secondItem="3s9-yM-Ucy" secondAttribute="trailing" constant="20" id="L4T-ru-eUH"/>
+                            <constraint firstAttribute="bottom" secondItem="58A-yK-c0K" secondAttribute="bottom" id="aww-Jd-byU"/>
+                            <constraint firstItem="58A-yK-c0K" firstAttribute="trailing" secondItem="ard-cX-iCR" secondAttribute="trailing" id="bgg-ia-oD6"/>
                             <constraint firstItem="H0F-wD-ZAQ" firstAttribute="top" secondItem="axC-rJ-zfX" secondAttribute="bottom" constant="27" id="cte-2g-Yhl"/>
                             <constraint firstItem="HxZ-jN-fWp" firstAttribute="leading" secondItem="ard-cX-iCR" secondAttribute="leading" constant="20" id="iHc-Ua-aj8"/>
                             <constraint firstItem="3s9-yM-Ucy" firstAttribute="top" secondItem="KBU-qI-AmV" secondAttribute="top" constant="65" id="l7N-15-mcS"/>
+                            <constraint firstItem="58A-yK-c0K" firstAttribute="top" secondItem="KBU-qI-AmV" secondAttribute="top" id="lgE-UV-JH4"/>
+                            <constraint firstItem="58A-yK-c0K" firstAttribute="leading" secondItem="KBU-qI-AmV" secondAttribute="leading" id="lqb-PY-u8b"/>
                             <constraint firstItem="3s9-yM-Ucy" firstAttribute="leading" secondItem="KBU-qI-AmV" secondAttribute="leading" constant="286" id="nNX-1a-Y2A"/>
                             <constraint firstItem="ard-cX-iCR" firstAttribute="trailing" secondItem="HxZ-jN-fWp" secondAttribute="trailing" constant="20" id="rPr-UM-4tY"/>
                             <constraint firstAttribute="bottom" secondItem="HxZ-jN-fWp" secondAttribute="bottom" constant="60" id="v1N-Q1-7b8"/>
@@ -669,122 +623,113 @@
             <objects>
                 <viewController title="Sign Up" modalTransitionStyle="crossDissolve" id="2DU-LZ-0Zl" customClass="SignUpViewController" customModule="ios_TicketingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="62X-cO-iAs">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="qPl-Cj-wPW">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="vvQ-aN-bKq">
-                                <rect key="frame" x="20" y="17" width="390" height="872"/>
+                                <rect key="frame" x="20" y="120" width="390" height="745"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="an6-CM-AY9">
-                                <rect key="frame" x="50" y="50" width="330" height="672"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="an6-CM-AY9">
+                                <rect key="frame" x="50" y="203" width="330" height="545"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="bV3-Dy-UDj">
-                                        <rect key="frame" x="0.0" y="0.0" width="330" height="119"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bV3-Dy-UDj">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="137"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNl-VP-h9B">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
-                                                <color key="textColor" red="0.25098040700000002" green="0.36078432199999999" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FTJ-um-YJ2" userLabel="First Name">
-                                                <rect key="frame" x="0.0" y="53.666666666666679" width="330" height="65.333333333333314"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FTJ-um-YJ2" userLabel="First Name">
+                                                <rect key="frame" x="0.0" y="40.66666666666665" width="330" height="96.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Trq-0S-H8o">
-                                        <rect key="frame" x="0.0" y="154.00000000000003" width="330" height="258.66666666666674"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Trq-0S-H8o">
+                                        <rect key="frame" x="0.0" y="170" width="330" height="74.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4F-Pp-g49">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
-                                                <color key="textColor" red="0.25098040700000002" green="0.36078432199999999" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAx-Im-QRF" userLabel="First Name">
-                                                <rect key="frame" x="0.0" y="47.666666666666657" width="330" height="210.99999999999997"/>
+                                                <rect key="frame" x="0.0" y="40.666666666666686" width="330" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lgS-1q-927">
-                                        <rect key="frame" x="0.0" y="447.66666666666669" width="330" height="94.666666666666686"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lgS-1q-927">
+                                        <rect key="frame" x="0.0" y="277.66666666666669" width="330" height="74.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJh-8U-gZf">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
-                                                <color key="textColor" red="0.25098040700000002" green="0.36078432199999999" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZ8-tV-bJp" userLabel="First Name">
-                                                <rect key="frame" x="0.0" y="60.666666666666686" width="330" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="749" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZ8-tV-bJp" userLabel="First Name">
+                                                <rect key="frame" x="0.0" y="40.666666666666686" width="330" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IAX-jq-bIn">
-                                        <rect key="frame" x="0.0" y="577.33333333333337" width="330" height="94.666666666666629"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IAX-jq-bIn">
+                                        <rect key="frame" x="0.0" y="385.33333333333337" width="330" height="74.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLY-es-idy">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
-                                                <color key="textColor" red="0.25098040700000002" green="0.36078432199999999" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sq1-TL-Awd" userLabel="First Name">
-                                                <rect key="frame" x="0.0" y="60.666666666666629" width="330" height="34"/>
+                                                <rect key="frame" x="0.0" y="40.666666666666629" width="330" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1W-cS-H0h">
+                                        <rect key="frame" x="0.0" y="493" width="330" height="52"/>
+                                        <color key="backgroundColor" red="0.65098041299999998" green="0.42352938649999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="titleShadowOffset" width="15" height="15"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="SIGN UP" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="28"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signUpButtonPressed:" destination="2DU-LZ-0Zl" eventType="touchUpInside" id="cvt-XC-4oa"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Trq-0S-H8o" firstAttribute="top" secondItem="an6-CM-AY9" secondAttribute="top" constant="154" id="Vgv-g5-KQS"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1W-cS-H0h">
-                                <rect key="frame" x="50" y="802" width="330" height="50"/>
-                                <color key="backgroundColor" red="0.65098041299999998" green="0.42352938649999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="titleShadowOffset" width="15" height="15"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="SIGN UP" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="28"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="signUpButtonPressed:" destination="2DU-LZ-0Zl" eventType="touchUpInside" id="cvt-XC-4oa"/>
-                                    <segue destination="VpR-S2-mg6" kind="show" identifier="goToConcertsSignUp" id="RwU-Ob-z1t"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jbp-kH-659"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="qPl-Cj-wPW" secondAttribute="bottom" id="0Cr-E1-asb"/>
-                            <constraint firstItem="Jbp-kH-659" firstAttribute="bottom" secondItem="an6-CM-AY9" secondAttribute="bottom" constant="200" id="6PY-wk-RBo"/>
-                            <constraint firstItem="X1W-cS-H0h" firstAttribute="leading" secondItem="Jbp-kH-659" secondAttribute="leading" constant="50" id="BM2-Kf-d9x"/>
-                            <constraint firstItem="Jbp-kH-659" firstAttribute="trailing" secondItem="X1W-cS-H0h" secondAttribute="trailing" constant="50" id="HbL-LX-oZo"/>
-                            <constraint firstItem="X1W-cS-H0h" firstAttribute="top" secondItem="an6-CM-AY9" secondAttribute="bottom" constant="80" id="IP2-82-aHD"/>
-                            <constraint firstItem="an6-CM-AY9" firstAttribute="leading" secondItem="Jbp-kH-659" secondAttribute="leading" constant="50" id="O7m-la-xgV"/>
-                            <constraint firstItem="an6-CM-AY9" firstAttribute="top" secondItem="Jbp-kH-659" secondAttribute="top" constant="150" id="P3u-C3-zML"/>
-                            <constraint firstItem="qPl-Cj-wPW" firstAttribute="leading" secondItem="Jbp-kH-659" secondAttribute="leading" id="Q7k-OY-hlC"/>
-                            <constraint firstItem="Jbp-kH-659" firstAttribute="trailing" secondItem="an6-CM-AY9" secondAttribute="trailing" constant="50" id="QUv-HG-dWs"/>
-                            <constraint firstItem="an6-CM-AY9" firstAttribute="top" secondItem="Jbp-kH-659" secondAttribute="top" constant="50" id="YjH-bo-6AD"/>
-                            <constraint firstItem="vvQ-aN-bKq" firstAttribute="leading" secondItem="Jbp-kH-659" secondAttribute="leading" constant="20" id="fsb-3I-Juw"/>
-                            <constraint firstItem="Jbp-kH-659" firstAttribute="trailing" secondItem="vvQ-aN-bKq" secondAttribute="trailing" constant="20" id="gMD-h1-HMZ"/>
-                            <constraint firstItem="qPl-Cj-wPW" firstAttribute="trailing" secondItem="Jbp-kH-659" secondAttribute="trailing" id="icr-8R-HdO"/>
-                            <constraint firstItem="Jbp-kH-659" firstAttribute="bottom" secondItem="X1W-cS-H0h" secondAttribute="bottom" constant="70" id="lgt-L2-HBY"/>
-                            <constraint firstItem="Jbp-kH-659" firstAttribute="bottom" secondItem="vvQ-aN-bKq" secondAttribute="bottom" constant="33" id="mGs-eY-Wkp"/>
-                            <constraint firstItem="qPl-Cj-wPW" firstAttribute="top" secondItem="62X-cO-iAs" secondAttribute="top" id="wGu-OC-QWY"/>
-                            <constraint firstItem="vvQ-aN-bKq" firstAttribute="top" secondItem="Jbp-kH-659" secondAttribute="top" constant="17" id="wvV-3n-1dB"/>
+                            <constraint firstItem="Jbp-kH-659" firstAttribute="bottom" secondItem="vvQ-aN-bKq" secondAttribute="bottom" constant="33" id="5bh-Bk-jvQ"/>
+                            <constraint firstItem="vvQ-aN-bKq" firstAttribute="leading" secondItem="Jbp-kH-659" secondAttribute="leading" constant="20" id="JUN-0e-M6V"/>
+                            <constraint firstItem="vvQ-aN-bKq" firstAttribute="top" secondItem="Jbp-kH-659" secondAttribute="top" constant="17" id="MLc-ae-XQg"/>
+                            <constraint firstItem="Jbp-kH-659" firstAttribute="trailing" secondItem="vvQ-aN-bKq" secondAttribute="trailing" constant="20" id="UR0-aF-v9F"/>
+                            <constraint firstItem="an6-CM-AY9" firstAttribute="top" secondItem="Jbp-kH-659" secondAttribute="top" constant="100" id="VbG-8N-JeZ"/>
+                            <constraint firstItem="qPl-Cj-wPW" firstAttribute="top" secondItem="62X-cO-iAs" secondAttribute="top" id="cKD-UK-dhx"/>
+                            <constraint firstItem="qPl-Cj-wPW" firstAttribute="leading" secondItem="Jbp-kH-659" secondAttribute="leading" id="e8h-nn-kTa"/>
+                            <constraint firstItem="qPl-Cj-wPW" firstAttribute="trailing" secondItem="Jbp-kH-659" secondAttribute="trailing" id="rvU-uS-SOp"/>
+                            <constraint firstItem="Jbp-kH-659" firstAttribute="bottom" secondItem="an6-CM-AY9" secondAttribute="bottom" constant="150" id="tfz-Xk-APo"/>
+                            <constraint firstItem="Jbp-kH-659" firstAttribute="trailing" secondItem="an6-CM-AY9" secondAttribute="trailing" constant="50" id="uLs-zy-JKv"/>
+                            <constraint firstItem="an6-CM-AY9" firstAttribute="leading" secondItem="Jbp-kH-659" secondAttribute="leading" constant="50" id="vgJ-HV-pqI"/>
+                            <constraint firstAttribute="bottom" secondItem="qPl-Cj-wPW" secondAttribute="bottom" id="ywY-cY-MIA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EgD-tN-9O0"/>
@@ -793,52 +738,53 @@
                         <outlet property="firstNameTextField" destination="FTJ-um-YJ2" id="UIZ-t0-iLz"/>
                         <outlet property="lastNameTextField" destination="iAx-Im-QRF" id="cZ8-D0-viH"/>
                         <outlet property="passwordTextField" destination="Sq1-TL-Awd" id="VUE-Y2-sUR"/>
+                        <segue destination="VpR-S2-mg6" kind="show" identifier="goToConcertsSignUp" id="Bb9-1U-u7h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kHo-Zu-Bik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930.69767441860461" y="397.85407725321892"/>
+            <point key="canvasLocation" x="932" y="379"/>
         </scene>
         <!--Login-->
         <scene sceneID="GkS-RM-82B">
             <objects>
                 <viewController title="Login" modalTransitionStyle="crossDissolve" id="u03-71-aN5" customClass="LoginViewController" customModule="ios_TicketingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="emH-y6-Xe0" customClass="viewController">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="fJp-h9-ovk">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="trJ-5l-T2c">
-                                <rect key="frame" x="20" y="145" width="390" height="704"/>
+                                <rect key="frame" x="20" y="248" width="390" height="577"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="zKx-lf-0mT">
-                                <rect key="frame" x="50" y="189.99999999999997" width="330" height="404.33333333333326"/>
+                                <rect key="frame" x="50" y="293" width="330" height="277.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Pt2-Ew-7zd">
-                                        <rect key="frame" x="0.0" y="0.0" width="330" height="261.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="134.66666666666666"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxs-G2-exH">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
-                                                <color key="textColor" red="0.25098040700000002" green="0.36078432199999999" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dRt-An-SVd" userLabel="First Name">
-                                                <rect key="frame" x="0.0" y="53.666666666666657" width="330" height="207.99999999999997"/>
+                                                <rect key="frame" x="0.0" y="53.666666666666686" width="330" height="81"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="8gA-2A-Hug">
-                                        <rect key="frame" x="0.0" y="316.66666666666669" width="330" height="87.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="189.66666666666669" width="330" height="87.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdP-zg-U6T">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
-                                                <color key="textColor" red="0.25098040700000002" green="0.36078432199999999" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bt0-IJ-n4h" userLabel="First Name">
@@ -854,7 +800,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP3-36-tdJ">
-                                <rect key="frame" x="50" y="694.33333333333337" width="330" height="47.666666666666629"/>
+                                <rect key="frame" x="50" y="670.33333333333337" width="330" height="47.666666666666629"/>
                                 <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="titleShadowOffset" width="15" height="15"/>
@@ -863,7 +809,7 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="VpR-S2-mg6" kind="show" identifier="goToConcertsLogin" id="Dwx-NU-cCz"/>
+                                    <action selector="loginButtonPressed:" destination="u03-71-aN5" eventType="touchUpInside" id="Kfa-DT-feV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -891,16 +837,140 @@
                     <connections>
                         <outlet property="emailTextField" destination="dRt-An-SVd" id="W6e-ia-ZPx"/>
                         <outlet property="passwordTextField" destination="Bt0-IJ-n4h" id="Nqd-FH-Ahj"/>
+                        <segue destination="VpR-S2-mg6" kind="show" identifier="goToConcertsLogin" id="9W9-hM-1dA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7y-SX-Vil" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="932.09302325581393" y="-340.55793991416311"/>
         </scene>
+        <!--Account Details-->
+        <scene sceneID="Iph-Cm-OhL">
+            <objects>
+                <viewController title="Account Details" modalTransitionStyle="crossDissolve" id="8X2-Ng-H98" customClass="AccountDetailsViewController" customModule="ios_TicketingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FRc-hH-N0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="lc7-gS-XBj">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="rbO-jl-bC1">
+                                <rect key="frame" x="20" y="17" width="390" height="872"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Crk-kd-FyE">
+                                <rect key="frame" x="50" y="100" width="330" height="672"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6MB-wW-wuL">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="264"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcS-3A-00x">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHE-7o-O07" userLabel="First Name">
+                                                <rect key="frame" x="0.0" y="40.666666666666643" width="330" height="223.33333333333337"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cMW-rR-fxI">
+                                        <rect key="frame" x="0.0" y="297" width="330" height="74.666666666666686"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHa-Fe-gNi">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4SW-Fm-UhT" userLabel="First Name">
+                                                <rect key="frame" x="0.0" y="40.666666666666686" width="330" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5dK-Xo-7m2">
+                                        <rect key="frame" x="0.0" y="404.66666666666669" width="330" height="74.666666666666686"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecm-hn-JSf">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52s-Hf-BFi" userLabel="First Name">
+                                                <rect key="frame" x="0.0" y="40.666666666666686" width="330" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="13V-cz-cqY">
+                                        <rect key="frame" x="0.0" y="512.33333333333337" width="330" height="74.666666666666629"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQP-YJ-UQs">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8M-TO-rtq" userLabel="First Name">
+                                                <rect key="frame" x="0.0" y="40.666666666666629" width="330" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC1-wa-YLR">
+                                        <rect key="frame" x="0.0" y="620" width="330" height="52"/>
+                                        <color key="backgroundColor" red="0.65098041299999998" green="0.42352938649999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="titleShadowOffset" width="15" height="15"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="UPDATE" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="28"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="X1J-BS-0zR" kind="show" id="sdD-gA-1GJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cMW-rR-fxI" firstAttribute="top" secondItem="Crk-kd-FyE" secondAttribute="top" constant="297" id="ava-SQ-9yK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BYj-xN-mV3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lc7-gS-XBj" firstAttribute="leading" secondItem="BYj-xN-mV3" secondAttribute="leading" id="6hx-6c-Va3"/>
+                            <constraint firstItem="BYj-xN-mV3" firstAttribute="trailing" secondItem="Crk-kd-FyE" secondAttribute="trailing" constant="50" id="HJF-Xh-ClX"/>
+                            <constraint firstItem="BYj-xN-mV3" firstAttribute="bottom" secondItem="Crk-kd-FyE" secondAttribute="bottom" constant="150" id="K8R-Pz-kcR"/>
+                            <constraint firstItem="BYj-xN-mV3" firstAttribute="trailing" secondItem="rbO-jl-bC1" secondAttribute="trailing" constant="20" id="Lnl-jW-Miu"/>
+                            <constraint firstItem="rbO-jl-bC1" firstAttribute="top" secondItem="BYj-xN-mV3" secondAttribute="top" constant="17" id="N6k-XZ-ZPs"/>
+                            <constraint firstItem="Crk-kd-FyE" firstAttribute="leading" secondItem="BYj-xN-mV3" secondAttribute="leading" constant="50" id="NlH-St-lJJ"/>
+                            <constraint firstItem="rbO-jl-bC1" firstAttribute="leading" secondItem="BYj-xN-mV3" secondAttribute="leading" constant="20" id="PXq-6r-wOV"/>
+                            <constraint firstAttribute="bottom" secondItem="lc7-gS-XBj" secondAttribute="bottom" id="shX-Cr-33l"/>
+                            <constraint firstItem="Crk-kd-FyE" firstAttribute="top" secondItem="BYj-xN-mV3" secondAttribute="top" constant="100" id="skJ-KZ-ia1"/>
+                            <constraint firstItem="lc7-gS-XBj" firstAttribute="top" secondItem="FRc-hH-N0Q" secondAttribute="top" id="tGX-y0-MmZ"/>
+                            <constraint firstItem="BYj-xN-mV3" firstAttribute="bottom" secondItem="rbO-jl-bC1" secondAttribute="bottom" constant="33" id="ylD-dJ-J1E"/>
+                            <constraint firstItem="lc7-gS-XBj" firstAttribute="trailing" secondItem="BYj-xN-mV3" secondAttribute="trailing" id="zWv-SH-MlV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WFO-Sh-jaQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k09-eP-sbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="-1601"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RwU-Ob-z1t"/>
-        <segue reference="Xwf-Zh-Zi5"/>
+        <segue reference="Bb9-1U-u7h"/>
+        <segue reference="sdD-gA-1GJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2.png" width="810" height="1440"/>

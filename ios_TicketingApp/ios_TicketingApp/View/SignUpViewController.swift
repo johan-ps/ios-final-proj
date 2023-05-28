@@ -22,13 +22,10 @@ class SignUpViewController:UIViewController{
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
         if firstNameTextField?.text != "" && lastNameTextField?.text != "" && emailTextField?.text != "" && passwordTextField?.text != ""{
-            let vc = storyboard?.instantiateViewController(identifier: "ConcertsViewController") as!
-            ConcertsViewController
-            self.navigationController?.pushViewController(vc, animated: true)
-                vc.navigationItem.setHidesBackButton(true, animated: true)
+            //check if email already exists
+            OperationQueue.main.addOperation {
+                self.performSegue(withIdentifier: "goToConcertsSignUp", sender: self)
             }
-        else{
-            print("All text fields must have data")
         }
         }
     }
