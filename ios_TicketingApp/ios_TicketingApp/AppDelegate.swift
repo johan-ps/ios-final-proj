@@ -2,11 +2,10 @@
 //  AppDelegate.swift
 //  ios_TicketingApp
 //
-//  Created by Clair Kinder on 9/5/2023.
+//  Created by Emily Kinder on 9/5/2023.
 //
 
 import UIKit
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

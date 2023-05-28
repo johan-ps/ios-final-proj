@@ -7,15 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763E5CE62A1C67CF002206E2 /* ConcertBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 763E5CE52A1C67CF002206E2 /* ConcertBackground.png */; };
+		763E5CE82A1C6867002206E2 /* TicketBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 763E5CE72A1C6867002206E2 /* TicketBackground.png */; };
+		763E5CEB2A1C690D002206E2 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E5CEA2A1C690D002206E2 /* TicketViewController.swift */; };
+		76A5C4B22A1DEEEA00F7098D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5C4B12A1DEEEA00F7098D /* LoginViewController.swift */; };
+		76A5C4B42A1DEF7100F7098D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5C4B32A1DEF7100F7098D /* SignUpViewController.swift */; };
+		76A5C4B62A1DF5F500F7098D /* ConcertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5C4B52A1DF5F500F7098D /* ConcertsViewController.swift */; };
+		76A5C4B82A1E3DF900F7098D /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A5C4B72A1E3DF900F7098D /* 2.png */; };
+		76A5C4BA2A1E3FAF00F7098D /* LoginBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A5C4B92A1E3FAF00F7098D /* LoginBackground.png */; };
+		76A5C4BD2A1E409300F7098D /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A5C4BB2A1E409300F7098D /* Login.png */; };
+		76A5C4BE2A1E409300F7098D /* Signup.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A5C4BC2A1E409300F7098D /* Signup.png */; };
+		76A5C4C02A1E52B100F7098D /* UserConcertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5C4BF2A1E52B100F7098D /* UserConcertsViewController.swift */; };
+		76A5C4C42A1E52FF00F7098D /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5C4C32A1E52FF00F7098D /* AccountDetailsViewController.swift */; };
+		76A5C4C62A1E532200F7098D /* TicketInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5C4C52A1E532200F7098D /* TicketInformationViewController.swift */; };
+		76A5C4C82A1E534600F7098D /* TicketPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5C4C72A1E534600F7098D /* TicketPriceViewController.swift */; };
+		76A5C4CA2A1E536200F7098D /* TicketPurchasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A5C4C92A1E536200F7098D /* TicketPurchasedViewController.swift */; };
+		76A5C4CC2A21C84300F7098D /* BackgroundGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A5C4CB2A21C84200F7098D /* BackgroundGradient.png */; };
 		76EF58A82A0A0A0E00D1EBF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF58A72A0A0A0E00D1EBF4 /* AppDelegate.swift */; };
 		76EF58AA2A0A0A0E00D1EBF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF58A92A0A0A0E00D1EBF4 /* SceneDelegate.swift */; };
 		76EF58AC2A0A0A0E00D1EBF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF58AB2A0A0A0E00D1EBF4 /* ViewController.swift */; };
 		76EF58AF2A0A0A0E00D1EBF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58AD2A0A0A0E00D1EBF4 /* Main.storyboard */; };
 		76EF58B12A0A0A1000D1EBF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58B02A0A0A1000D1EBF4 /* Assets.xcassets */; };
 		76EF58B42A0A0A1000D1EBF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58B22A0A0A1000D1EBF4 /* LaunchScreen.storyboard */; };
+		76EF58BF2A0A0CE600D1EBF4 /* up-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58BE2A0A0CE600D1EBF4 /* up-2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		763E5CE52A1C67CF002206E2 /* ConcertBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConcertBackground.png; sourceTree = "<group>"; };
+		763E5CE72A1C6867002206E2 /* TicketBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TicketBackground.png; sourceTree = "<group>"; };
+		763E5CEA2A1C690D002206E2 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		76A5C4B12A1DEEEA00F7098D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		76A5C4B32A1DEF7100F7098D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		76A5C4B52A1DF5F500F7098D /* ConcertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertsViewController.swift; sourceTree = "<group>"; };
+		76A5C4B72A1E3DF900F7098D /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		76A5C4B92A1E3FAF00F7098D /* LoginBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBackground.png; sourceTree = "<group>"; };
+		76A5C4BB2A1E409300F7098D /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		76A5C4BC2A1E409300F7098D /* Signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup.png; sourceTree = "<group>"; };
+		76A5C4BF2A1E52B100F7098D /* UserConcertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConcertsViewController.swift; sourceTree = "<group>"; };
+		76A5C4C32A1E52FF00F7098D /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
+		76A5C4C52A1E532200F7098D /* TicketInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInformationViewController.swift; sourceTree = "<group>"; };
+		76A5C4C72A1E534600F7098D /* TicketPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketPriceViewController.swift; sourceTree = "<group>"; };
+		76A5C4C92A1E536200F7098D /* TicketPurchasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketPurchasedViewController.swift; sourceTree = "<group>"; };
+		76A5C4CB2A21C84200F7098D /* BackgroundGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundGradient.png; sourceTree = "<group>"; };
 		76EF58A42A0A0A0E00D1EBF4 /* ios_TicketingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_TicketingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EF58A72A0A0A0E00D1EBF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76EF58A92A0A0A0E00D1EBF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +57,7 @@
 		76EF58B02A0A0A1000D1EBF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76EF58B32A0A0A1000D1EBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76EF58B52A0A0A1000D1EBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76EF58BE2A0A0CE600D1EBF4 /* up-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		763E5CE92A1C68F9002206E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76EF58AB2A0A0A0E00D1EBF4 /* ViewController.swift */,
+				763E5CEA2A1C690D002206E2 /* TicketViewController.swift */,
+				76A5C4B12A1DEEEA00F7098D /* LoginViewController.swift */,
+				76A5C4B32A1DEF7100F7098D /* SignUpViewController.swift */,
+				76A5C4B52A1DF5F500F7098D /* ConcertsViewController.swift */,
+				76A5C4BF2A1E52B100F7098D /* UserConcertsViewController.swift */,
+				76A5C4C32A1E52FF00F7098D /* AccountDetailsViewController.swift */,
+				76A5C4C52A1E532200F7098D /* TicketInformationViewController.swift */,
+				76A5C4C72A1E534600F7098D /* TicketPriceViewController.swift */,
+				76A5C4C92A1E536200F7098D /* TicketPurchasedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		76EF589B2A0A0A0E00D1EBF4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +107,31 @@
 		76EF58A62A0A0A0E00D1EBF4 /* ios_TicketingApp */ = {
 			isa = PBXGroup;
 			children = (
+				763E5CE92A1C68F9002206E2 /* View */,
+				76EF58BB2A0A0C8B00D1EBF4 /* Images */,
 				76EF58A72A0A0A0E00D1EBF4 /* AppDelegate.swift */,
 				76EF58A92A0A0A0E00D1EBF4 /* SceneDelegate.swift */,
-				76EF58AB2A0A0A0E00D1EBF4 /* ViewController.swift */,
 				76EF58AD2A0A0A0E00D1EBF4 /* Main.storyboard */,
 				76EF58B02A0A0A1000D1EBF4 /* Assets.xcassets */,
 				76EF58B22A0A0A1000D1EBF4 /* LaunchScreen.storyboard */,
 				76EF58B52A0A0A1000D1EBF4 /* Info.plist */,
 			);
 			path = ios_TicketingApp;
+			sourceTree = "<group>";
+		};
+		76EF58BB2A0A0C8B00D1EBF4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				76A5C4CB2A21C84200F7098D /* BackgroundGradient.png */,
+				763E5CE72A1C6867002206E2 /* TicketBackground.png */,
+				76EF58BE2A0A0CE600D1EBF4 /* up-2.png */,
+				76A5C4B72A1E3DF900F7098D /* 2.png */,
+				76A5C4BB2A1E409300F7098D /* Login.png */,
+				76A5C4BC2A1E409300F7098D /* Signup.png */,
+				763E5CE52A1C67CF002206E2 /* ConcertBackground.png */,
+				76A5C4B92A1E3FAF00F7098D /* LoginBackground.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +193,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				76EF58B42A0A0A1000D1EBF4 /* LaunchScreen.storyboard in Resources */,
+				763E5CE62A1C67CF002206E2 /* ConcertBackground.png in Resources */,
+				76A5C4BD2A1E409300F7098D /* Login.png in Resources */,
+				76A5C4CC2A21C84300F7098D /* BackgroundGradient.png in Resources */,
+				76A5C4B82A1E3DF900F7098D /* 2.png in Resources */,
 				76EF58B12A0A0A1000D1EBF4 /* Assets.xcassets in Resources */,
+				763E5CE82A1C6867002206E2 /* TicketBackground.png in Resources */,
 				76EF58AF2A0A0A0E00D1EBF4 /* Main.storyboard in Resources */,
+				76A5C4BE2A1E409300F7098D /* Signup.png in Resources */,
+				76EF58BF2A0A0CE600D1EBF4 /* up-2.png in Resources */,
+				76A5C4BA2A1E3FAF00F7098D /* LoginBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +213,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A5C4CA2A1E536200F7098D /* TicketPurchasedViewController.swift in Sources */,
+				76A5C4B62A1DF5F500F7098D /* ConcertsViewController.swift in Sources */,
+				76A5C4B42A1DEF7100F7098D /* SignUpViewController.swift in Sources */,
+				76A5C4C42A1E52FF00F7098D /* AccountDetailsViewController.swift in Sources */,
+				76A5C4C82A1E534600F7098D /* TicketPriceViewController.swift in Sources */,
+				763E5CEB2A1C690D002206E2 /* TicketViewController.swift in Sources */,
 				76EF58AC2A0A0A0E00D1EBF4 /* ViewController.swift in Sources */,
+				76A5C4C02A1E52B100F7098D /* UserConcertsViewController.swift in Sources */,
+				76A5C4C62A1E532200F7098D /* TicketInformationViewController.swift in Sources */,
 				76EF58A82A0A0A0E00D1EBF4 /* AppDelegate.swift in Sources */,
+				76A5C4B22A1DEEEA00F7098D /* LoginViewController.swift in Sources */,
 				76EF58AA2A0A0A0E00D1EBF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
