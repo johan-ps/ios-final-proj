@@ -30,6 +30,10 @@
 		76EF58B12A0A0A1000D1EBF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58B02A0A0A1000D1EBF4 /* Assets.xcassets */; };
 		76EF58B42A0A0A1000D1EBF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58B22A0A0A1000D1EBF4 /* LaunchScreen.storyboard */; };
 		76EF58BF2A0A0CE600D1EBF4 /* up-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58BE2A0A0CE600D1EBF4 /* up-2.png */; };
+		BD692D312A2469F300121EF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD692D302A2469F300121EF5 /* User.swift */; };
+		BD692D332A246C9600121EF5 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD692D322A246C9600121EF5 /* FileReader.swift */; };
+		BD692D362A246D8600121EF5 /* UserCredentials.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD692D352A246D8600121EF5 /* UserCredentials.txt */; };
+		BD692D382A248D2600121EF5 /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD692D372A248D2600121EF5 /* FileWriter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		76EF58B32A0A0A1000D1EBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76EF58B52A0A0A1000D1EBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76EF58BE2A0A0CE600D1EBF4 /* up-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-2.png"; sourceTree = "<group>"; };
+		BD692D302A2469F300121EF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BD692D322A246C9600121EF5 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		BD692D352A246D8600121EF5 /* UserCredentials.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = UserCredentials.txt; sourceTree = "<group>"; };
+		BD692D372A248D2600121EF5 /* FileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,8 @@
 		76EF58A62A0A0A0E00D1EBF4 /* ios_TicketingApp */ = {
 			isa = PBXGroup;
 			children = (
+				BD692D342A246D5700121EF5 /* TextFiles */,
+				BD692D2F2A2469DF00121EF5 /* Model */,
 				763E5CE92A1C68F9002206E2 /* View */,
 				76EF58BB2A0A0C8B00D1EBF4 /* Images */,
 				76EF58A72A0A0A0E00D1EBF4 /* AppDelegate.swift */,
@@ -132,6 +142,24 @@
 				76A5C4B92A1E3FAF00F7098D /* LoginBackground.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		BD692D2F2A2469DF00121EF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD692D352A246D8600121EF5 /* UserCredentials.txt */,
+				BD692D302A2469F300121EF5 /* User.swift */,
+				BD692D322A246C9600121EF5 /* FileReader.swift */,
+				BD692D372A248D2600121EF5 /* FileWriter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD692D342A246D5700121EF5 /* TextFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TextFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD692D362A246D8600121EF5 /* UserCredentials.txt in Resources */,
 				76EF58B42A0A0A1000D1EBF4 /* LaunchScreen.storyboard in Resources */,
 				763E5CE62A1C67CF002206E2 /* ConcertBackground.png in Resources */,
 				76A5C4BD2A1E409300F7098D /* Login.png in Resources */,
@@ -213,7 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD692D312A2469F300121EF5 /* User.swift in Sources */,
 				76A5C4CA2A1E536200F7098D /* TicketPurchasedViewController.swift in Sources */,
+				BD692D332A246C9600121EF5 /* FileReader.swift in Sources */,
 				76A5C4B62A1DF5F500F7098D /* ConcertsViewController.swift in Sources */,
 				76A5C4B42A1DEF7100F7098D /* SignUpViewController.swift in Sources */,
 				76A5C4C42A1E52FF00F7098D /* AccountDetailsViewController.swift in Sources */,
@@ -223,6 +254,7 @@
 				76A5C4C02A1E52B100F7098D /* UserConcertsViewController.swift in Sources */,
 				76A5C4C62A1E532200F7098D /* TicketInformationViewController.swift in Sources */,
 				76EF58A82A0A0A0E00D1EBF4 /* AppDelegate.swift in Sources */,
+				BD692D382A248D2600121EF5 /* FileWriter.swift in Sources */,
 				76A5C4B22A1DEEEA00F7098D /* LoginViewController.swift in Sources */,
 				76EF58AA2A0A0A0E00D1EBF4 /* SceneDelegate.swift in Sources */,
 			);

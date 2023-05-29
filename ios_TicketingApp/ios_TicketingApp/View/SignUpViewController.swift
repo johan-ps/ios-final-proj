@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SignUpViewController:UIViewController{
+class SignUpViewController: UIViewController {
     
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -21,12 +21,41 @@ class SignUpViewController:UIViewController{
     }
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
-        if firstNameTextField?.text != "" && lastNameTextField?.text != "" && emailTextField?.text != "" && passwordTextField?.text != ""{
-            //check if email already exists
-            OperationQueue.main.addOperation {
-                self.performSegue(withIdentifier: "goToConcertsSignUp", sender: self)
+        let fileReader = FileReader()
+        let users = fileReader.getUsers()
+        var flag = true
+        for user in users{
+            if user.email == emailTextField.text {
+                flag = false
             }
         }
+        if let firstName = firstNameTextField?.text,
+           let lastName = lastNameTextField?.text,
+           let email = emailTextField?.text,
+           let password = passwordTextField?.text,
+           !firstName.isEmpty,
+           !lastName.isEmpty,
+           !email.isEmpty,
+           !password.isEmpty,
+           flag{
+            
+            let newUser = User(firstName: firstName, lastName: lastName, email: email, password: password)
+            let fileWriter = FileWriter()
+            fileWriter.addUser(user: newUser)
+            
+            performSegue(withIdentifier: "goToConcertsSignUp", sender: newUser)
+        }
+        firstNameTextField.text = ""
+        lastNameTextField.text = ""
+        emailTextField.text = ""
+        passwordTextField.text = ""
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToConcertsSignUp" {
+            if let concertVC = segue.destination as? ConcertsViewController {
+                concertVC.user = sender as? User
+            }
         }
     }
-
+}

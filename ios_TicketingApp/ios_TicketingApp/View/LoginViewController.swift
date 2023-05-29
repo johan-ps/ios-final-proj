@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class LoginViewController:UIViewController{
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
@@ -18,11 +18,27 @@ class LoginViewController:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
     @IBAction func loginButtonPressed(_ sender: Any) {
-        if emailTextField.text != "" && passwordTextField.text != "" { //check if fields are null
-            //add in logic to check though logins
-            OperationQueue.main.addOperation {
-                self.performSegue(withIdentifier: "goToConcertsLogin", sender: self)
+        let fileReader = FileReader()
+        let users: [User] = fileReader.getUsers()
+
+        if emailTextField.text != "" && passwordTextField.text != "" {
+            for user in users {
+                if user.email == emailTextField.text && user.password == passwordTextField.text {
+                    performSegue(withIdentifier: "goToConcertsLogin", sender: user)
+                    return
+                }
+            }
+            emailTextField.text = ""
+            passwordTextField.text = ""
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToConcertsLogin" {
+            if let concertVC = segue.destination as? ConcertsViewController {
+                concertVC.user = sender as? User
             }
         }
     }
