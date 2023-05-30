@@ -9,14 +9,16 @@ import UIKit
 
 class TicketViewController: UIViewController {
 
-    @IBOutlet weak var ticketDetailsStack: UIStackView!
+    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var concertNameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var quantityLabel: UILabel!
     
     override func viewDidLoad() {
-        ticketDetailsStack.transform = CGAffineTransformMakeRotation(.pi / 2)
+        concertNameLabel.transform = CGAffineTransformMakeRotation(.pi / 2)
+        dateLabel.transform = CGAffineTransformMakeRotation(.pi / 2)
+        quantityLabel.transform = CGAffineTransformMakeRotation(.pi / 2)
+        locationLabel.transform = CGAffineTransformMakeRotation(.pi / 2)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

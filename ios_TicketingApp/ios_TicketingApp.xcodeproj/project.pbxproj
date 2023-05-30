@@ -30,6 +30,7 @@
 		76EF58B12A0A0A1000D1EBF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58B02A0A0A1000D1EBF4 /* Assets.xcassets */; };
 		76EF58B42A0A0A1000D1EBF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58B22A0A0A1000D1EBF4 /* LaunchScreen.storyboard */; };
 		76EF58BF2A0A0CE600D1EBF4 /* up-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58BE2A0A0CE600D1EBF4 /* up-2.png */; };
+		794BBD132A25CAC300CDA103 /* NewNewTicket.png in Resources */ = {isa = PBXBuildFile; fileRef = 794BBD122A25CAC300CDA103 /* NewNewTicket.png */; };
 		BD5E90D52A259AF000F1944D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E90D42A259AF000F1944D /* Event.swift */; };
 		BD5E90D72A259F4300F1944D /* Events.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD5E90D62A259F4300F1944D /* Events.txt */; };
 		BD692D312A2469F300121EF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD692D302A2469F300121EF5 /* User.swift */; };
@@ -64,6 +65,7 @@
 		76EF58B32A0A0A1000D1EBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76EF58B52A0A0A1000D1EBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76EF58BE2A0A0CE600D1EBF4 /* up-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-2.png"; sourceTree = "<group>"; };
+		794BBD122A25CAC300CDA103 /* NewNewTicket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewNewTicket.png; sourceTree = "<group>"; };
 		BD5E90D42A259AF000F1944D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		BD5E90D62A259F4300F1944D /* Events.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Events.txt; sourceTree = "<group>"; };
 		BD692D302A2469F300121EF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		76EF58BB2A0A0C8B00D1EBF4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				794BBD122A25CAC300CDA103 /* NewNewTicket.png */,
 				76A5C4CB2A21C84200F7098D /* BackgroundGradient.png */,
 				763E5CE72A1C6867002206E2 /* TicketBackground.png */,
 				76EF58BE2A0A0CE600D1EBF4 /* up-2.png */,
@@ -231,6 +234,7 @@
 				763E5CE62A1C67CF002206E2 /* ConcertBackground.png in Resources */,
 				76A5C4BD2A1E409300F7098D /* Login.png in Resources */,
 				76A5C4CC2A21C84300F7098D /* BackgroundGradient.png in Resources */,
+				794BBD132A25CAC300CDA103 /* NewNewTicket.png in Resources */,
 				76A5C4B82A1E3DF900F7098D /* 2.png in Resources */,
 				76EF58B12A0A0A1000D1EBF4 /* Assets.xcassets in Resources */,
 				BD5E90D72A259F4300F1944D /* Events.txt in Resources */,
