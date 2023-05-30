@@ -56,10 +56,11 @@ class AccountDetailsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "goBackToUpcomingGigs" {
-                if let userConcertsVC = segue.destination as? UserConcertsViewController {
-                    userConcertsVC.user = self.currentUser
-                }
+        if segue.identifier == "goBackToUpcomingGigs" {
+            if let userConcertsVC = segue.destination as? UserConcertsViewController {
+                userConcertsVC.user = self.currentUser
             }
         }
+        
+    }
 }

@@ -61,5 +61,15 @@ class TicketPriceViewController:UIViewController{
             
         }
     }
+    @IBAction func confirmBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToOrderConfirmed", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToOrderConfirmed" {
+            if let upcomingGigsVC = segue.destination as? TicketPurchasedViewController {
+                // upcomingGigsVC.user = self.user ADD BACK IN
+            }
+        }
     
 }

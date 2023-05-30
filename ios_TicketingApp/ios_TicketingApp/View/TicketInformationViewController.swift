@@ -28,6 +28,7 @@ class TicketInformationViewController:UIViewController{
     }
     @IBAction func buyNowBtn(_ sender: Any) {
         print(event?.name ?? "nill")
+        self.performSegue(withIdentifier: "goToTicketPrices", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToTicketPrices" {

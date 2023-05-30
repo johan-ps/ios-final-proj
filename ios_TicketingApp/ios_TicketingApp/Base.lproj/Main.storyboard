@@ -124,7 +124,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="accountDetailsBtnPressed:" destination="X1J-BS-0zR" eventType="touchUpInside" id="Iur-We-9ue"/>
-                                            <segue destination="VpR-S2-mg6" kind="show" id="D4c-tI-Q8w"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-RV-6S9">
@@ -138,7 +137,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="accountDetailsBtnPressed:" destination="X1J-BS-0zR" eventType="touchUpInside" id="xB2-ff-gRL"/>
-                                            <segue destination="8X2-Ng-H98" kind="show" identifier="goToAccountDetails" id="vbn-HD-JK0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -152,9 +150,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="TEST TICKETS"/>
-                                <connections>
-                                    <segue destination="h0g-LR-qHC" kind="show" identifier="goToAccountDetails" id="bFW-Lw-4cy"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hk6-vY-meX"/>
@@ -174,6 +169,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1VW-3z-JAj"/>
+                    <connections>
+                        <segue destination="h0g-LR-qHC" kind="show" identifier="goToTicketTEST" id="T6X-1i-xdV"/>
+                        <segue destination="8X2-Ng-H98" kind="show" identifier="goToAccountDetails" id="5se-PN-byR"/>
+                        <segue destination="VpR-S2-mg6" kind="show" identifier="goToHome" id="CVK-ZK-BIY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iO8-sY-He8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -319,7 +319,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="buyNowBtn:" destination="jgW-py-gQp" eventType="touchUpInside" id="rUP-0x-eTG"/>
-                                            <segue destination="DtN-uC-pkl" kind="show" identifier="goToTicketPrices" id="dbt-fF-IMj"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -352,6 +351,7 @@
                         <outlet property="locationLbl" destination="EIT-08-aSw" id="Fbd-2p-sg1"/>
                         <outlet property="nameLbl" destination="t0E-M1-4y6" id="2xn-Rd-Gp7"/>
                         <outlet property="priceLbl" destination="CK0-XD-lND" id="Yfs-KN-lim"/>
+                        <segue destination="DtN-uC-pkl" kind="show" identifier="goToTicketPrices" id="IVc-ov-qWm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfw-PD-tTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -424,7 +424,7 @@
                                             <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="34"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="StL-bb-C8e" kind="show" id="J4M-3a-uaN"/>
+                                            <action selector="confirmBtnPressed:" destination="DtN-uC-pkl" eventType="touchUpInside" id="gTS-VS-jJy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -447,6 +447,7 @@
                         <outlet property="ticketQuantityLabel" destination="zdD-gA-jXP" id="Kj0-MK-LuT"/>
                         <outlet property="ticketStepper" destination="vud-IP-nVJ" id="3Gc-Ti-hqB"/>
                         <outlet property="totalPriceLabel" destination="Fv8-fy-6yS" id="MT0-rJ-Be4"/>
+                        <segue destination="StL-bb-C8e" kind="show" identifier="goToOrderConfirmed" id="cIc-6J-mV0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LiZ-Cv-oC5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -498,7 +499,7 @@
                                                     <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="X1J-BS-0zR" kind="show" id="0b1-CY-ADY"/>
+                                                    <action selector="concertsBtnPressed:" destination="StL-bb-C8e" eventType="touchUpInside" id="9p5-OM-ABo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-yd-cWF">
@@ -511,7 +512,7 @@
                                                     <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="VpR-S2-mg6" kind="show" id="V07-xb-JVW"/>
+                                                    <action selector="homeBtnPressed:" destination="StL-bb-C8e" eventType="touchUpInside" id="bw9-sH-ka4"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -531,6 +532,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="W7H-J7-w11"/>
+                    <connections>
+                        <segue destination="X1J-BS-0zR" kind="show" identifier="goToMyConcerts" id="8kR-eH-RX3"/>
+                        <segue destination="VpR-S2-mg6" kind="show" identifier="goToHome" id="YvK-au-7JF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SxQ-GB-N3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -562,7 +567,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="concertsBtnPressed:" destination="VpR-S2-mg6" eventType="touchUpInside" id="OU8-oB-iZR"/>
-                                            <segue destination="X1J-BS-0zR" kind="show" identifier="goToUpcomingGigs" id="wNM-KM-gFb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3s9-yM-Ucy">
@@ -575,8 +579,7 @@
                                             <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="12"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="logOutBtnPressed:" destination="VpR-S2-mg6" eventType="touchUpInside" id="0aP-Lp-8AB"/>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="cXl-gj-jtn"/>
+                                            <action selector="logOutBtnPressed:" destination="VpR-S2-mg6" eventType="touchUpInside" id="yde-ta-qz5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -592,9 +595,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="jgW-py-gQp" kind="show" identifier="goToEventDetail" id="axO-P1-11o"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -632,6 +632,9 @@
                         <outlet property="concertsTblView" destination="HxZ-jN-fWp" id="R94-li-Ti2"/>
                         <outlet property="logOutBtn" destination="3s9-yM-Ucy" id="4ps-lE-0ZW"/>
                         <outlet property="welcomeLbl" destination="H0F-wD-ZAQ" id="SQM-hE-HPm"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToMenu" id="hU7-S9-mG0"/>
+                        <segue destination="X1J-BS-0zR" kind="show" identifier="goToUpcomingGigs" id="cbO-pH-rMk"/>
+                        <segue destination="jgW-py-gQp" kind="show" identifier="goToEventDetail" id="5NV-bg-MU6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcS-Xj-yCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -956,7 +959,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="updateBtnPressed:" destination="8X2-Ng-H98" eventType="touchUpInside" id="8Bu-gZ-S9W"/>
-                                            <segue destination="X1J-BS-0zR" kind="show" identifier="goBackToUpcomingGigs" id="Wx2-tU-vxI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -985,6 +987,7 @@
                         <outlet property="firstNameTextField" destination="QHE-7o-O07" id="Q8c-Ob-bd1"/>
                         <outlet property="lastNameTextField" destination="4SW-Fm-UhT" id="LfE-1L-Tt1"/>
                         <outlet property="passwordTextField" destination="S8M-TO-rtq" id="RIi-Ff-tm6"/>
+                        <segue destination="X1J-BS-0zR" kind="show" identifier="goBackToUpcomingGigs" id="5pM-hv-NFe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k09-eP-sbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -993,10 +996,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="J4M-3a-uaN"/>
-        <segue reference="V07-xb-JVW"/>
-        <segue reference="Wx2-tU-vxI"/>
-        <segue reference="cXl-gj-jtn"/>
+        <segue reference="cIc-6J-mV0"/>
+        <segue reference="YvK-au-7JF"/>
+        <segue reference="5pM-hv-NFe"/>
+        <segue reference="hU7-S9-mG0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2.png" width="810" height="1440"/>

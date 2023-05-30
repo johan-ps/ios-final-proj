@@ -29,7 +29,7 @@ class ConcertsViewController:UIViewController, UITableViewDataSource, UITableVie
     }
 
     @IBAction func logOutBtnPressed(_ sender: UIButton) {
-
+        self.performSegue(withIdentifier: "goToMenu", sender: self)
     }
 
     @IBAction func concertsBtnPressed(_ sender: Any) {
@@ -45,6 +45,9 @@ class ConcertsViewController:UIViewController, UITableViewDataSource, UITableVie
             if let eventDetailVC = segue.destination as? TicketInformationViewController, let event = sender as? Event {
                 eventDetailVC.event = event
             }
+        }
+        else if segue.identifier == "goToMenu"{
+            let menuVC = segue.destination as? ViewController
         }
     }
 
