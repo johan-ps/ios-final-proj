@@ -13,7 +13,7 @@ class UserConcertsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: true)
+        navigationController?.isNavigationBarHidden = false
     }
     
     @IBAction func accountDetailsBtnPressed(_ sender: Any) {
@@ -22,8 +22,11 @@ class UserConcertsViewController: UIViewController {
     }
 
     // Prepare for the segue to the account details screen
-    @IBAction func homePageBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: "goToHomePageUser", sender: self)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToAccountDetails" {
+            if let accountDetailsVC = segue.destination as? AccountDetailsViewController {
+                accountDetailsVC.currentUser = self.user
+            }
+        }
     }
-    
 }

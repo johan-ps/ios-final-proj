@@ -16,9 +16,7 @@ class TicketViewController: UIViewController {
     @IBOutlet weak var quantityLabel: UILabel!
     
     override func viewDidLoad() {
-        concertNameLabel.transform = CGAffineTransformMakeRotation(.pi / 2)
-        dateLabel.transform = CGAffineTransformMakeRotation(.pi / 2)
-        quantityLabel.transform = CGAffineTransformMakeRotation(.pi / 2)
+        ticketDetailsStack.transform = CGAffineTransformMakeRotation(.pi / 2)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

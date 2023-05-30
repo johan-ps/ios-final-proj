@@ -36,4 +36,32 @@ class FileReader {
         
         return users
     }
+    
+    static func getEvents() -> [Event] {
+        let filename = "Events"
+        let fileURL = Bundle.main.url(forResource: filename, withExtension: "txt")
+
+        var events: [Event] = []
+
+        do {
+            let text = try String(contentsOf: fileURL!, encoding: .utf8)
+            let eventStrings = text.components(separatedBy: "\n")
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd-MM-yyy"  // Adjust this to match the format of dates in your file
+
+            for eventString in eventStrings {
+                let eventComponents = eventString.components(separatedBy: " | ")
+                if eventComponents.count == 4,
+                   let date = dateFormatter.date(from: eventComponents[1]),
+                   let price = Double(eventComponents[2]) {
+                    let event = Event(name: eventComponents[0], date: date, price: price, location: eventComponents[3])
+                    events.append(event)
+                }
+            }
+        } catch {
+            print("Failed to read file: \(error)")
+        }
+        
+        return events
+    }
 }
