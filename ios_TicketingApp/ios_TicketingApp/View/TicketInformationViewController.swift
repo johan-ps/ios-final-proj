@@ -13,6 +13,7 @@ class TicketInformationViewController:UIViewController{
     @IBOutlet var dateLbl: UILabel!
     @IBOutlet var locationLbl: UILabel!
     @IBOutlet var priceLbl: UILabel!
+    var userConcerts: [Ticket] = []
     override func viewDidLoad(){
         super.viewDidLoad()
         
@@ -37,6 +38,7 @@ class TicketInformationViewController:UIViewController{
                 //TicketPriceViewController.user = self.user
                 VC.event = event
                 VC.user = self.user
+                VC.userConcerts = self.userConcerts
             }
         }
     }

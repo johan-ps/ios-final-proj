@@ -14,6 +14,7 @@ class ConcertsViewController:UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet var concertsTblView: UITableView!
     @IBOutlet var welcomeLbl: UILabel!
     @IBOutlet weak var logOutBtn: UIButton!
+    var userConcerts: [Ticket] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,12 +41,14 @@ class ConcertsViewController:UIViewController, UITableViewDataSource, UITableVie
         if segue.identifier == "goToUpcomingGigs" {
             if let upcomingGigsVC = segue.destination as? UserConcertsViewController {
                 upcomingGigsVC.user = self.user
+                upcomingGigsVC.userConcerts = self.userConcerts
             }
         }
         else if segue.identifier == "goToEventDetail" {
             if let eventDetailVC = segue.destination as? TicketInformationViewController, let event = sender as? Event {
                 eventDetailVC.event = event
                 eventDetailVC.user = self.user
+                eventDetailVC.userConcerts = self.userConcerts
             }
         }
         else if segue.identifier == "goToMenu"{

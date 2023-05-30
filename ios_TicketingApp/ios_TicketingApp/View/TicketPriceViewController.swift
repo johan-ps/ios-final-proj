@@ -17,6 +17,7 @@ class TicketPriceViewController:UIViewController{
     @IBOutlet weak var ticketQuantityLabel: UILabel!
     var event: Event?
     var user: User?
+    var userConcerts: [Ticket] = []
     var ticketQuantity: Int = 1
     var totalPrice: Float = 0.0;
 
@@ -71,6 +72,7 @@ class TicketPriceViewController:UIViewController{
                 let fileWriter = FileWriter()
                 fileWriter.writeUserTickets(user: currentUser)
                 print("\(user?.tickets.count)")
+                userConcerts.append(ticket)
                 
             }
         }
@@ -81,8 +83,10 @@ class TicketPriceViewController:UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToOrderConfirmed" {
             if let upcomingGigsVC = segue.destination as? TicketPurchasedViewController {
-                upcomingGigsVC.user = self.user //ADD BACK IN
-                //upcomingGigsVC.
+                upcomingGigsVC.user = self.user
+                upcomingGigsVC.userConcerts = self.userConcerts
+                upcomingGigsVC.concertName = nameLabel.text ?? ""
+                
             }
         }
     }

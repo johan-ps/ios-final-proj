@@ -14,6 +14,7 @@ class AccountDetailsViewController: UIViewController {
     
     var currentUser: User?  // This should be set before this view controller is presented
     let fileWriter = FileWriter()
+    var userConcerts: [Ticket] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +60,7 @@ class AccountDetailsViewController: UIViewController {
         if segue.identifier == "goBackToUpcomingGigs" {
             if let userConcertsVC = segue.destination as? UserConcertsViewController {
                 userConcertsVC.user = self.currentUser
+                userConcertsVC.userConcerts = self.userConcerts
             }
         }
         

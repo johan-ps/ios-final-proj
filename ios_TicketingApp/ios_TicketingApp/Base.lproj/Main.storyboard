@@ -141,7 +141,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-kk-EFI">
-                                <rect key="frame" x="20" y="150.33333333333331" width="353" height="622.66666666666674"/>
+                                <rect key="frame" x="20" y="150.33333333333331" width="353" height="671.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userConcertsCell" id="ZlV-4l-90D">
@@ -188,7 +188,7 @@
                     <navigationItem key="navigationItem" id="1VW-3z-JAj"/>
                     <connections>
                         <outlet property="userConcertsTblView" destination="EbI-kk-EFI" id="6Fz-Wr-iZQ"/>
-                        <segue destination="h0g-LR-qHC" kind="show" identifier="goToTicketTEST" id="T6X-1i-xdV"/>
+                        <segue destination="h0g-LR-qHC" kind="show" identifier="goToEventDetail" id="T6X-1i-xdV"/>
                         <segue destination="8X2-Ng-H98" kind="show" identifier="goToAccountDetails" id="5se-PN-byR"/>
                         <segue destination="VpR-S2-mg6" kind="show" identifier="goToHome" id="CVK-ZK-BIY"/>
                     </connections>
@@ -389,7 +389,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-fk-FgF">
-                                <rect key="frame" x="20" y="60" width="353" height="683"/>
+                                <rect key="frame" x="20" y="60" width="353" height="732"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="aeX-DC-1kc">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="254"/>
@@ -436,7 +436,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdu-Lt-rQr">
-                                        <rect key="frame" x="0.0" y="465" width="353" height="218"/>
+                                        <rect key="frame" x="0.0" y="465" width="353" height="267"/>
                                         <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="titleShadowOffset" width="15" height="15"/>
@@ -487,7 +487,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="952"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-Ab-ode">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-Ab-ode">
                                 <rect key="frame" x="50" y="200" width="293" height="393"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hqc-eV-7Cp">
@@ -508,10 +508,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="biw-rZ-lwe">
-                                        <rect key="frame" x="0.0" y="186.66666666666669" width="293" height="206.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="166.66666666666669" width="293" height="226.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-4U-jPW">
-                                                <rect key="frame" x="0.0" y="0.0" width="293" height="98.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="293" height="118.33333333333333"/>
                                                 <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <size key="titleShadowOffset" width="15" height="15"/>
@@ -524,7 +524,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-yd-cWF">
-                                                <rect key="frame" x="0.0" y="158.33333333333331" width="293" height="48"/>
+                                                <rect key="frame" x="0.0" y="178.33333333333331" width="293" height="48"/>
                                                 <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <size key="titleShadowOffset" width="15" height="15"/>
@@ -554,6 +554,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="W7H-J7-w11"/>
                     <connections>
+                        <outlet property="concertNameLabel" destination="qZB-GD-ama" id="lsR-8d-OS0"/>
                         <segue destination="X1J-BS-0zR" kind="show" identifier="goToMyConcerts" id="8kR-eH-RX3"/>
                         <segue destination="VpR-S2-mg6" kind="show" identifier="goToHome" id="YvK-au-7JF"/>
                     </connections>
@@ -1017,8 +1018,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CVK-ZK-BIY"/>
-        <segue reference="LD2-zP-Qdr"/>
+        <segue reference="YvK-au-7JF"/>
+        <segue reference="8kR-eH-RX3"/>
         <segue reference="hU7-S9-mG0"/>
     </inferredMetricsTieBreakers>
     <resources>
