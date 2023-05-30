@@ -29,4 +29,12 @@ class TicketInformationViewController:UIViewController{
     @IBAction func buyNowBtn(_ sender: Any) {
         print(event?.name ?? "nill")
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToTicketPrices" {
+            if let VC = segue.destination as? TicketPriceViewController {
+                //upcomingGigsVC.user = self.user ADD BACK IN
+                VC.event = event
+            }
+        }
+    }
 }

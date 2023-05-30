@@ -37,11 +37,11 @@ class ConcertsViewController:UIViewController, UITableViewDataSource, UITableVie
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       /* if segue.identifier == "goToUpcomingGigs" {
+        if segue.identifier == "goToUpcomingGigs" {
             if let upcomingGigsVC = segue.destination as? UserConcertsViewController {
                 upcomingGigsVC.user = self.user
             }
-        } else if */ if segue.identifier == "goToEventDetail" {
+        } else if segue.identifier == "goToEventDetail" {
             if let eventDetailVC = segue.destination as? TicketInformationViewController, let event = sender as? Event {
                 eventDetailVC.event = event
             }
