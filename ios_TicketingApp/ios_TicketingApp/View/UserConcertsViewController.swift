@@ -10,8 +10,9 @@ import UIKit
 
 class UserConcertsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     
+    
     var user: User?
-   // let fileReader = FileReader()
+    // let fileReader = FileReader()
     var userConcerts: [Ticket] = []
     
     
@@ -23,11 +24,11 @@ class UserConcertsViewController: UIViewController, UITableViewDataSource, UITab
         userConcertsTblView.dataSource = self
         userConcertsTblView.delegate = self
         //userConcerts = fileReader.getUserTickets(user: user!)
-       // print("\(userConcerts.count)")
+        // print("\(userConcerts.count)")
         // Load the user's concerts/tickets
-       // addUserConcerts()
+        // addUserConcerts()
         //print("\(userConcerts.count)")
-
+        
         userConcertsTblView.reloadData()
         
         //print("\(user?.firstName)")
@@ -46,7 +47,7 @@ class UserConcertsViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBAction func goToTicketTESTBtnPressed(_ sender: Any) {
         // Trigger the segue to the account details screen
- 
+        
         performSegue(withIdentifier: "goToTicketTEST", sender: self)
     }
     
@@ -54,14 +55,14 @@ class UserConcertsViewController: UIViewController, UITableViewDataSource, UITab
         // Trigger the segue to the account details screen
         performSegue(withIdentifier: "goToHome", sender: self)
     }
-
+    
     // Prepare for the segue to the account details screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToAccountDetails" {
             if let accountDetailsVC = segue.destination as? AccountDetailsViewController {
                 accountDetailsVC.currentUser = self.user
                 accountDetailsVC.userConcerts = self.userConcerts
-
+                
             }
             
         }
@@ -69,35 +70,43 @@ class UserConcertsViewController: UIViewController, UITableViewDataSource, UITab
             if let ticketVC = segue.destination as? TicketViewController{
                 //userConcertsVC.user = self.currentUser ADD BACK IN
                 ticketVC.userConcerts = self.userConcerts
-
+                
             }
         }
         else if segue.identifier == "goToHome"{
             if let homeVC = segue.destination as? ConcertsViewController{
                 homeVC.user = self.user
                 homeVC.userConcerts = self.userConcerts
-
+                
+            }
+        } else if segue.identifier == "goToEventDetail"{
+            if let homeVC = segue.destination as? TicketViewController{
+                homeVC.thisConcert = sender as? Ticket
+                homeVC.user = self.user
+                homeVC.userConcerts = self.userConcerts
+                
             }
         }
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        userConcerts.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "userConcertsCell", for: indexPath)
         
-        let concert = userConcerts[indexPath.row]
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            userConcerts.count
+        }
         
-        cell.textLabel?.text = concert.event.name
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "userConcertsCell", for: indexPath)
+            
+            let concert = userConcerts[indexPath.row]
+            
+            cell.textLabel?.text = concert.event.name
+            
+            return cell
+        }
         
-        return cell
-    }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let ticket = userConcerts[indexPath.row]
+            
+            performSegue(withIdentifier: "goToEventDetail", sender: ticket)
+        }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let ticket = userConcerts[indexPath.row]
-
-        performSegue(withIdentifier: "goToEventDetail", sender: ticket)
-    }
 }

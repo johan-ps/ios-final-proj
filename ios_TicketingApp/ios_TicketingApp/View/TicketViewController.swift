@@ -13,6 +13,7 @@ class TicketViewController: UIViewController {
     @IBOutlet weak var concertNameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var quantityLabel: UILabel!
+    var user: User?
     var thisConcert: Ticket?
     var userConcerts: [Ticket] = []
     
@@ -30,7 +31,7 @@ class TicketViewController: UIViewController {
             let dateString = dateFormatter.string(from: eventDate)
             dateLabel.text = dateString
         }
-        quantityLabel.text = ("General Admission x\(thisConcert?.quantity)")
+        quantityLabel.text = ("General Admission x\(String(describing: thisConcert?.quantity))")
         
 
         // Do any additional setup after loading the view.
