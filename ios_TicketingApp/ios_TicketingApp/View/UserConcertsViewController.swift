@@ -20,22 +20,20 @@ class UserConcertsViewController: UIViewController, UITableViewDataSource, UITab
         
         userConcertsTblView.dataSource = self
         userConcertsTblView.delegate = self
-      //  print("\(userConcerts.count)")
+        print("\(userConcerts.count)")
         // Load the user's concerts/tickets
-        addUserConcerts()
-       // print("\(userConcerts.count)")
+       // addUserConcerts()
+        print("\(userConcerts.count)")
         userConcertsTblView.reloadData()
         
-      //  print("\(user?.firstName)")
+        print("\(user?.firstName)")
     }
     
     func addUserConcerts(){
         let fileReader = FileReader()
-        var currentUser: User = user!
-        print("\(currentUser.firstName)")
+        if let currentUser = user{
             userConcerts = fileReader.getUserTickets(user: currentUser)
-
-        
+        }
     }
     @IBAction func accountDetailsBtnPressed(_ sender: Any) {
         // Trigger the segue to the account details screen
