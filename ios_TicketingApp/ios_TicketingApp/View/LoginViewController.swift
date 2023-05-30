@@ -29,18 +29,14 @@ class LoginViewController: UIViewController {
                     performSegue(withIdentifier: "goToConcertsLogin", sender: user)
                     return
                 }
-                else{
-                    let alert = UIAlertController(title: "Invalid Input", message: "Email or Password not found", preferredStyle: .alert)
-
-                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "This closes alert"), style: .default, handler: { _ in
-                    NSLog("The \"OK\" alert occured.")
-                    }))
-
-                    self.present(alert, animated: true, completion: nil)
-                    return
-                }
-
             }
+            let alert = UIAlertController(title: "Invalid Input", message: "Email or Password not found", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "This closes alert"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+
+            self.present(alert, animated: true, completion: nil)
             emailTextField.text = ""
             passwordTextField.text = ""
         }

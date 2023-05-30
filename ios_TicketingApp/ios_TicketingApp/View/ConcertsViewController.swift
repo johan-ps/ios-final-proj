@@ -31,11 +31,4 @@ class ConcertsViewController:UIViewController{
         self.performSegue(withIdentifier: "goToUpcomingGigs", sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "goToUpcomingGigs" {
-                if let upcomingGigsVC = segue.destination as? UserConcertsViewController {
-                    upcomingGigsVC.user = self.user
-                }
-            }
-        }
 }
