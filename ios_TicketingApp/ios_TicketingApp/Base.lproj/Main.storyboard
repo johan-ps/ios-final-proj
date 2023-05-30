@@ -100,9 +100,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ConcertBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSY-Eq-sRh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConcertBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSY-Eq-sRh">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR UPCOMING GIGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nko-YQ-PeT">
                                 <rect key="frame" x="20" y="107.66666666666667" width="353" height="32.666666666666671"/>
@@ -123,7 +122,6 @@
                                             <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="10"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="accountDetailsBtnPressed:" destination="X1J-BS-0zR" eventType="touchUpInside" id="Iur-We-9ue"/>
                                             <action selector="goToHomeBtnPressed:" destination="X1J-BS-0zR" eventType="touchUpInside" id="Stg-eK-Flo"/>
                                         </connections>
                                     </button>
@@ -141,10 +139,23 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="BgJ-RV-6S9" firstAttribute="leading" secondItem="0Qb-J0-S0S" secondAttribute="trailing" constant="114" id="u98-9F-Wc2"/>
+                                </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-kk-EFI">
                                 <rect key="frame" x="20" y="160.33333333333331" width="353" height="631.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userConcertsCell" id="ZlV-4l-90D">
+                                        <rect key="frame" x="0.0" y="50" width="353" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZlV-4l-90D" id="azY-sv-1da">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPs-nk-rFd">
                                 <rect key="frame" x="240" y="125" width="137" height="34.333333333333343"/>
@@ -162,18 +173,23 @@
                             <constraint firstItem="nko-YQ-PeT" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="3dA-zV-iEY"/>
                             <constraint firstItem="EbI-kk-EFI" firstAttribute="top" secondItem="nko-YQ-PeT" secondAttribute="bottom" constant="20" id="8Yv-Pa-OxR"/>
                             <constraint firstItem="EbI-kk-EFI" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="IUv-dd-zJZ"/>
+                            <constraint firstAttribute="bottom" secondItem="iSY-Eq-sRh" secondAttribute="bottom" id="ODN-wx-r15"/>
                             <constraint firstItem="6td-vm-4mx" firstAttribute="top" secondItem="WNH-Ia-zPT" secondAttribute="top" constant="50" id="PNM-GS-xeT"/>
+                            <constraint firstItem="iSY-Eq-sRh" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" id="QxM-ts-Opq"/>
                             <constraint firstItem="nko-YQ-PeT" firstAttribute="top" secondItem="6td-vm-4mx" secondAttribute="bottom" constant="30" id="Ryi-Qc-6M0"/>
                             <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="EbI-kk-EFI" secondAttribute="trailing" constant="20" id="dIz-N3-Tn7"/>
                             <constraint firstItem="6td-vm-4mx" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="kPv-wc-Cdg"/>
                             <constraint firstItem="nko-YQ-PeT" firstAttribute="top" secondItem="6td-vm-4mx" secondAttribute="bottom" constant="30" id="lmp-E7-C0u"/>
+                            <constraint firstItem="iSY-Eq-sRh" firstAttribute="trailing" secondItem="hk6-vY-meX" secondAttribute="trailing" id="pUx-ZR-j5I"/>
                             <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="6td-vm-4mx" secondAttribute="trailing" constant="20" id="pyJ-kG-CKT"/>
                             <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="nko-YQ-PeT" secondAttribute="trailing" constant="20" id="tOB-TX-TUe"/>
                             <constraint firstAttribute="bottom" secondItem="EbI-kk-EFI" secondAttribute="bottom" constant="50" id="teG-YC-YCE"/>
+                            <constraint firstItem="iSY-Eq-sRh" firstAttribute="top" secondItem="hk6-vY-meX" secondAttribute="top" id="zRY-lI-edu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1VW-3z-JAj"/>
                     <connections>
+                        <outlet property="userConcertsTblView" destination="EbI-kk-EFI" id="6Fz-Wr-iZQ"/>
                         <segue destination="h0g-LR-qHC" kind="show" identifier="goToTicketTEST" id="T6X-1i-xdV"/>
                         <segue destination="8X2-Ng-H98" kind="show" identifier="goToAccountDetails" id="5se-PN-byR"/>
                         <segue destination="VpR-S2-mg6" kind="show" identifier="goToHome" id="CVK-ZK-BIY"/>
@@ -195,28 +211,28 @@
                                 <rect key="frame" x="-50" y="-50" width="493" height="942"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewNewTicket.png" translatesAutoresizingMaskIntoConstraints="NO" id="YAi-jD-BMx">
-                                <rect key="frame" x="20" y="10" width="353" height="773"/>
+                                <rect key="frame" x="20" y="10" width="353" height="822"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DD/MM/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60Y-Dd-HDG">
-                                <rect key="frame" x="115" y="30" width="221" height="613"/>
+                                <rect key="frame" x="115" y="30" width="221" height="662"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqn-V4-vg1">
-                                <rect key="frame" x="30" y="30" width="236" height="613"/>
+                                <rect key="frame" x="30" y="30" width="236" height="662"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONCERT NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEZ-TH-9dX">
-                                <rect key="frame" x="157" y="30" width="273" height="613"/>
+                                <rect key="frame" x="157" y="30" width="273" height="662"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Admission x 'X'" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAv-QT-dhQ">
-                                <rect key="frame" x="-75" y="29" width="325.33333333333331" height="613"/>
+                                <rect key="frame" x="-75" y="29" width="325.33333333333331" height="662"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -570,8 +586,6 @@
                                             <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="12"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="concertsBtnPressed:" destination="VpR-S2-mg6" eventType="touchUpInside" id="OU8-oB-iZR"/>
-                                            <action selector="myConcertsBtnPressed:" destination="VpR-S2-mg6" eventType="touchUpInside" id="OxK-Mb-Fbx"/>
                                             <action selector="userConcertsBtnPressed:" destination="VpR-S2-mg6" eventType="touchUpInside" id="OYu-sE-V7V"/>
                                         </connections>
                                     </button>

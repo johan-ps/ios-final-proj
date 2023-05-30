@@ -45,6 +45,7 @@ class ConcertsViewController:UIViewController, UITableViewDataSource, UITableVie
         else if segue.identifier == "goToEventDetail" {
             if let eventDetailVC = segue.destination as? TicketInformationViewController, let event = sender as? Event {
                 eventDetailVC.event = event
+                eventDetailVC.user = self.user
             }
         }
         else if segue.identifier == "goToMenu"{

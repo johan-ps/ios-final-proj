@@ -16,6 +16,7 @@ class TicketPriceViewController:UIViewController{
     @IBOutlet weak var ticketStepper: UIStepper!
     @IBOutlet weak var ticketQuantityLabel: UILabel!
     var event: Event?
+    var user: User?
     var ticketQuantity: Int = 1
     var totalPrice: Float = 0.0;
 
@@ -62,13 +63,23 @@ class TicketPriceViewController:UIViewController{
         }
     }
     @IBAction func confirmBtnPressed(_ sender: Any) {
+        if let currentEvent = event{
+            let ticket = Ticket(event: currentEvent, quantity: ticketQuantity)
+            
+            if let currentUser = user{
+                currentUser.addTicket(ticket)
+                let fileWriter = FileWriter()
+                fileWriter.writeUserTickets(user: currentUser)
+            }
+        }
+        
         performSegue(withIdentifier: "goToOrderConfirmed", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToOrderConfirmed" {
             if let upcomingGigsVC = segue.destination as? TicketPurchasedViewController {
-                // upcomingGigsVC.user = self.user ADD BACK IN
+                upcomingGigsVC.user = self.user //ADD BACK IN
             }
         }
     }

@@ -64,4 +64,36 @@ class FileReader {
         
         return events
     }
+    
+    func getUserTickets(user: User) -> [Ticket] {
+        let filename = "\(user.email)_Tickets"
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileURL = documentsURL.appendingPathComponent("\(filename).txt")
+        
+        var tickets: [Ticket] = []
+        
+        do {
+            let text = try String(contentsOf: fileURL, encoding: .utf8)
+            let ticketStrings = text.components(separatedBy: "\n")
+            
+            for ticketString in ticketStrings {
+                let ticketComponents = ticketString.components(separatedBy: " | ")
+                
+                if ticketComponents.count == 5,
+                   let eventDate = DateFormatter().date(from: ticketComponents[1]),
+                   let eventPrice = Double(ticketComponents[3]),
+                   let ticketQuantity = Int(ticketComponents[4]) {
+                    
+                    let event = Event(name: ticketComponents[0], date: eventDate, price: eventPrice, location: ticketComponents[2])
+                    let ticket = Ticket(event: event, quantity: ticketQuantity)
+                    tickets.append(ticket)
+                }
+            }
+        } catch {
+            print("Failed to read file: \(error)")
+        }
+        
+        return tickets
+    }
 }

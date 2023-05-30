@@ -31,6 +31,7 @@
 		76EF58B42A0A0A1000D1EBF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58B22A0A0A1000D1EBF4 /* LaunchScreen.storyboard */; };
 		76EF58BF2A0A0CE600D1EBF4 /* up-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58BE2A0A0CE600D1EBF4 /* up-2.png */; };
 		794BBD132A25CAC300CDA103 /* NewNewTicket.png in Resources */ = {isa = PBXBuildFile; fileRef = 794BBD122A25CAC300CDA103 /* NewNewTicket.png */; };
+		BD5D22D62A2602CE000FFF49 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D22D52A2602CE000FFF49 /* Ticket.swift */; };
 		BD5E90D52A259AF000F1944D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E90D42A259AF000F1944D /* Event.swift */; };
 		BD5E90D72A259F4300F1944D /* Events.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD5E90D62A259F4300F1944D /* Events.txt */; };
 		BD692D312A2469F300121EF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD692D302A2469F300121EF5 /* User.swift */; };
@@ -66,6 +67,7 @@
 		76EF58B52A0A0A1000D1EBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76EF58BE2A0A0CE600D1EBF4 /* up-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-2.png"; sourceTree = "<group>"; };
 		794BBD122A25CAC300CDA103 /* NewNewTicket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewNewTicket.png; sourceTree = "<group>"; };
+		BD5D22D52A2602CE000FFF49 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		BD5E90D42A259AF000F1944D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		BD5E90D62A259F4300F1944D /* Events.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Events.txt; sourceTree = "<group>"; };
 		BD692D302A2469F300121EF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				BD692D322A246C9600121EF5 /* FileReader.swift */,
 				BD692D372A248D2600121EF5 /* FileWriter.swift */,
 				BD5E90D42A259AF000F1944D /* Event.swift */,
+				BD5D22D52A2602CE000FFF49 /* Ticket.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				76A5C4C02A1E52B100F7098D /* UserConcertsViewController.swift in Sources */,
 				76A5C4C62A1E532200F7098D /* TicketInformationViewController.swift in Sources */,
 				76EF58A82A0A0A0E00D1EBF4 /* AppDelegate.swift in Sources */,
+				BD5D22D62A2602CE000FFF49 /* Ticket.swift in Sources */,
 				BD692D382A248D2600121EF5 /* FileWriter.swift in Sources */,
 				76A5C4B22A1DEEEA00F7098D /* LoginViewController.swift in Sources */,
 				76EF58AA2A0A0A0E00D1EBF4 /* SceneDelegate.swift in Sources */,

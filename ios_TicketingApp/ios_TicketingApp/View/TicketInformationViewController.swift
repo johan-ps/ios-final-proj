@@ -8,6 +8,7 @@ import UIKit
 
 class TicketInformationViewController:UIViewController{
     var event: Event?
+    var user: User?
     @IBOutlet var nameLbl: UILabel!
     @IBOutlet var dateLbl: UILabel!
     @IBOutlet var locationLbl: UILabel!
@@ -35,6 +36,7 @@ class TicketInformationViewController:UIViewController{
             if let VC = segue.destination as? TicketPriceViewController {
                 //TicketPriceViewController.user = self.user
                 VC.event = event
+                VC.user = self.user
             }
         }
     }

@@ -82,4 +82,24 @@ class FileWriter {
             }
         }
     }
+    
+    func writeUserTickets(user: User) {
+        let filename = "\(user.email)_Tickets"
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileURL = documentsURL.appendingPathComponent("\(filename).txt")
+        
+        var ticketStrings: [String] = []
+        for ticket in user.tickets {
+            let ticketString = "\(ticket.event.name) | \(ticket.event.date) | \(ticket.event.location) | \(ticket.event.price) | \(ticket.quantity)"
+            ticketStrings.append(ticketString)
+        }
+        let fileContents = ticketStrings.joined(separator: "\n")
+        
+        do {
+            try fileContents.write(to: fileURL, atomically: true, encoding: .utf8)
+        } catch {
+            print("Failed to write file: \(error)")
+        }
+    }
 }

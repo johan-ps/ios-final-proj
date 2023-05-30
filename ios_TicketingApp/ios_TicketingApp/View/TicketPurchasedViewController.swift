@@ -6,6 +6,7 @@ import Foundation
 import UIKit
 
 class TicketPurchasedViewController:UIViewController{
+    var user: User?
     override func viewDidLoad(){
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
@@ -15,7 +16,7 @@ class TicketPurchasedViewController:UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToMyConcerts" {
             if let accountDetailsVC = segue.destination as? UserConcertsViewController {
-                //accountDetailsVC.currentUser = self.user ADD BACK IN
+                accountDetailsVC.user = self.user //ADD BACK IN
             }
         }
         else if segue.identifier == "goToHome" {
