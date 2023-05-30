@@ -14,7 +14,7 @@ class ConcertsViewController:UIViewController{
     @IBOutlet weak var logOutBtn: UIButton!
     override func viewDidLoad(){
         super.viewDidLoad()
-        super.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.setHidesBackButton(true, animated: true)
         
         if let unwrapped = user {
             let name = unwrapped.firstName.uppercased()
