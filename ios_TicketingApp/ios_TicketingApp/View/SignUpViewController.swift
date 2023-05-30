@@ -27,6 +27,16 @@ class SignUpViewController: UIViewController {
         for user in users{
             if user.email == emailTextField.text {
                 flag = false
+
+                    let alert = UIAlertController(title: "Email already in use", message: "Enter a new email or login", preferredStyle: .alert)
+
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "This closes alert"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                    }))
+
+                    self.present(alert, animated: true, completion: nil)
+                    return
+                
             }
         }
         if let firstName = firstNameTextField?.text,
@@ -44,6 +54,16 @@ class SignUpViewController: UIViewController {
             fileWriter.addUser(user: newUser)
             
             performSegue(withIdentifier: "goToConcertsSignUp", sender: newUser)
+        }
+        else{
+            let alert = UIAlertController(title: "Invalid Input", message: "All fields must be completed", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "This closes alert"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+
+            self.present(alert, animated: true, completion: nil)
+            return
         }
         firstNameTextField.text = ""
         lastNameTextField.text = ""
