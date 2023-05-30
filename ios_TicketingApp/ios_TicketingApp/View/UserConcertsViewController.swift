@@ -25,6 +25,11 @@ class UserConcertsViewController: UIViewController {
         // Trigger the segue to the account details screen
         performSegue(withIdentifier: "goToTicketTEST", sender: self)
     }
+    
+    @IBAction func goToHomeBtnPressed(_ sender: Any) {
+        // Trigger the segue to the account details screen
+        performSegue(withIdentifier: "goToHome", sender: self)
+    }
 
     // Prepare for the segue to the account details screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

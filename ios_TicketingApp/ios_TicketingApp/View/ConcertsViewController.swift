@@ -32,16 +32,17 @@ class ConcertsViewController:UIViewController, UITableViewDataSource, UITableVie
         self.performSegue(withIdentifier: "goToMenu", sender: self)
     }
 
-    @IBAction func concertsBtnPressed(_ sender: Any) {
+    @IBAction func userConcertsBtnPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "goToUpcomingGigs", sender: self)
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToUpcomingGigs" {
             if let upcomingGigsVC = segue.destination as? UserConcertsViewController {
                 upcomingGigsVC.user = self.user
             }
-        } else if segue.identifier == "goToEventDetail" {
+        }
+        else if segue.identifier == "goToEventDetail" {
             if let eventDetailVC = segue.destination as? TicketInformationViewController, let event = sender as? Event {
                 eventDetailVC.event = event
             }

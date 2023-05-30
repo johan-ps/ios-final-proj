@@ -33,7 +33,7 @@ class TicketInformationViewController:UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToTicketPrices" {
             if let VC = segue.destination as? TicketPriceViewController {
-                //upcomingGigsVC.user = self.user ADD BACK IN
+                //TicketPriceViewController.user = self.user
                 VC.event = event
             }
         }

@@ -71,5 +71,5 @@ class TicketPriceViewController:UIViewController{
                 // upcomingGigsVC.user = self.user ADD BACK IN
             }
         }
-    
+    }
 }

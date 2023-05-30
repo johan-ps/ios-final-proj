@@ -124,6 +124,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="accountDetailsBtnPressed:" destination="X1J-BS-0zR" eventType="touchUpInside" id="Iur-We-9ue"/>
+                                            <action selector="goToHomeBtnPressed:" destination="X1J-BS-0zR" eventType="touchUpInside" id="Stg-eK-Flo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-RV-6S9">
@@ -136,7 +137,7 @@
                                             <fontDescription key="titleFontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="10"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="accountDetailsBtnPressed:" destination="X1J-BS-0zR" eventType="touchUpInside" id="xB2-ff-gRL"/>
+                                            <action selector="accountDetailsBtnPressed:" destination="X1J-BS-0zR" eventType="touchUpInside" id="MuN-NJ-hnJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -150,6 +151,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="TEST TICKETS"/>
+                                <connections>
+                                    <action selector="goToTicketTESTBtnPressed:" destination="X1J-BS-0zR" eventType="touchUpInside" id="Ubf-e9-uJH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hk6-vY-meX"/>
@@ -191,28 +195,28 @@
                                 <rect key="frame" x="-50" y="-50" width="493" height="942"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewNewTicket.png" translatesAutoresizingMaskIntoConstraints="NO" id="YAi-jD-BMx">
-                                <rect key="frame" x="20" y="10" width="353" height="822"/>
+                                <rect key="frame" x="20" y="10" width="353" height="773"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DD/MM/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60Y-Dd-HDG">
-                                <rect key="frame" x="115" y="30" width="221" height="662"/>
+                                <rect key="frame" x="115" y="30" width="221" height="613"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqn-V4-vg1">
-                                <rect key="frame" x="30" y="30" width="236" height="662"/>
+                                <rect key="frame" x="30" y="30" width="236" height="613"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONCERT NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEZ-TH-9dX">
-                                <rect key="frame" x="157" y="30" width="273" height="662"/>
+                                <rect key="frame" x="157" y="30" width="273" height="613"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Admission x 'X'" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAv-QT-dhQ">
-                                <rect key="frame" x="-75" y="29" width="325.33333333333331" height="662"/>
+                                <rect key="frame" x="-75" y="29" width="325.33333333333331" height="613"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -467,7 +471,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-Ab-ode">
-                                <rect key="frame" x="50" y="200" width="293" height="442"/>
+                                <rect key="frame" x="50" y="200" width="293" height="393"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hqc-eV-7Cp">
                                         <rect key="frame" x="0.0" y="0.0" width="293" height="86.666666666666671"/>
@@ -487,10 +491,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="biw-rZ-lwe">
-                                        <rect key="frame" x="0.0" y="186.66666666666669" width="293" height="255.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="186.66666666666669" width="293" height="206.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-4U-jPW">
-                                                <rect key="frame" x="0.0" y="0.0" width="293" height="147.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="293" height="98.333333333333329"/>
                                                 <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <size key="titleShadowOffset" width="15" height="15"/>
@@ -503,7 +507,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-yd-cWF">
-                                                <rect key="frame" x="0.0" y="207.33333333333331" width="293" height="48"/>
+                                                <rect key="frame" x="0.0" y="158.33333333333331" width="293" height="48"/>
                                                 <color key="backgroundColor" red="0.53333336109999996" green="0.62745100259999997" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <size key="titleShadowOffset" width="15" height="15"/>
@@ -567,6 +571,8 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="concertsBtnPressed:" destination="VpR-S2-mg6" eventType="touchUpInside" id="OU8-oB-iZR"/>
+                                            <action selector="myConcertsBtnPressed:" destination="VpR-S2-mg6" eventType="touchUpInside" id="OxK-Mb-Fbx"/>
+                                            <action selector="userConcertsBtnPressed:" destination="VpR-S2-mg6" eventType="touchUpInside" id="OYu-sE-V7V"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3s9-yM-Ucy">
@@ -633,8 +639,8 @@
                         <outlet property="logOutBtn" destination="3s9-yM-Ucy" id="4ps-lE-0ZW"/>
                         <outlet property="welcomeLbl" destination="H0F-wD-ZAQ" id="SQM-hE-HPm"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToMenu" id="hU7-S9-mG0"/>
-                        <segue destination="X1J-BS-0zR" kind="show" identifier="goToUpcomingGigs" id="cbO-pH-rMk"/>
                         <segue destination="jgW-py-gQp" kind="show" identifier="goToEventDetail" id="5NV-bg-MU6"/>
+                        <segue destination="X1J-BS-0zR" kind="show" identifier="goToUpcomingGigs" id="LD2-zP-Qdr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcS-Xj-yCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -996,9 +1002,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cIc-6J-mV0"/>
-        <segue reference="YvK-au-7JF"/>
-        <segue reference="5pM-hv-NFe"/>
+        <segue reference="CVK-ZK-BIY"/>
+        <segue reference="LD2-zP-Qdr"/>
         <segue reference="hU7-S9-mG0"/>
     </inferredMetricsTieBreakers>
     <resources>
