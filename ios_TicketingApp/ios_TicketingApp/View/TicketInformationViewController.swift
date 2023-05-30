@@ -14,7 +14,7 @@ class TicketInformationViewController:UIViewController{
     @IBOutlet var priceLbl: UILabel!
     override func viewDidLoad(){
         super.viewDidLoad()
-        super.navigationController?.isNavigationBarHidden = false
+        
         
         nameLbl.text = event?.name
         if let eventDate = event?.date {

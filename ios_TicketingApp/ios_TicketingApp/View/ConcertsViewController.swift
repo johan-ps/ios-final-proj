@@ -17,7 +17,7 @@ class ConcertsViewController:UIViewController, UITableViewDataSource, UITableVie
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.setHidesBackButton(true, animated: true)
 
         if let unwrapped = user {
             let name = unwrapped.firstName.uppercased()

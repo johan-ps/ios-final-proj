@@ -13,7 +13,7 @@ class UserConcertsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = false
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     @IBAction func accountDetailsBtnPressed(_ sender: Any) {

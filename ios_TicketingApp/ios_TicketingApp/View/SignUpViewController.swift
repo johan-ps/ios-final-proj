@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        passwordTextField.isSecureTextEntry = true
     }
     
     @IBAction func signUpButtonPressed(_ sender: Any) {

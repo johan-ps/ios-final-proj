@@ -8,7 +8,7 @@ import UIKit
 class TicketPurchasedViewController:UIViewController{
     override func viewDidLoad(){
         super.viewDidLoad()
-        super.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.setHidesBackButton(true, animated: true)
 
     }
 }
