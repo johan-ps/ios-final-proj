@@ -1,0 +1,16 @@
+Taylor Swift | 01-03-2023 | 150.00 | Sydney Opera House, NSW
+Ed Sheeran | 15-03-2023 | 120.00 | Newcastle Entertainment Centre, NSW
+Beyonce | 28-03-2023 | 200.00 | Qudos Bank Arena, Sydney, NSW
+Adele | 05-04-2023 | 180.00 | WIN Entertainment Centre, Wollongong, NSW
+Rihanna | 18-04-2023 | 160.00 | Sydney Cricket Ground, NSW
+Lady Gaga | 01-05-2023 | 170.00 | ANZ Stadium, Sydney, NSW
+Justin Bieber | 15-05-2023 | 120.00 | Bankwest Stadium, Parramatta, NSW
+Katy Perry | 30-05-2023 | 140.00 | Blue Mountains Theatre, Springwood, NSW
+Bruno Mars | 13-06-2023 | 150.00 | Panthers Stadium, Penrith, NSW
+Shawn Mendes | 27-06-2023 | 110.00 | Sydney Showground Stadium, NSW
+Billie Eilish | 10-07-2023 | 130.00 | Wollongong University Hall, NSW
+Dua Lipa | 25-07-2023 | 120.00 | Glasshouse, Port Macquarie, NSW
+Harry Styles | 09-08-2023 | 140.00 | Riverside Theatre, Parramatta, NSW
+Ariana Grande | 23-08-2023 | 160.00 | Sydney Opera House, NSW
+Post Malone | 07-09-2023 | 130.00 | Newcastle Entertainment Centre, NSW
+

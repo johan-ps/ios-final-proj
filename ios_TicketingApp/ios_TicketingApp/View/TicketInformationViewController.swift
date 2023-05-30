@@ -7,9 +7,26 @@ import Foundation
 import UIKit
 
 class TicketInformationViewController:UIViewController{
+    var event: Event?
+    @IBOutlet var nameLbl: UILabel!
+    @IBOutlet var dateLbl: UILabel!
+    @IBOutlet var locationLbl: UILabel!
+    @IBOutlet var priceLbl: UILabel!
     override func viewDidLoad(){
         super.viewDidLoad()
         super.navigationController?.isNavigationBarHidden = false
-
+        
+        nameLbl.text = event?.name
+        if let eventDate = event?.date {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/yyyy"
+            let dateString = dateFormatter.string(from: eventDate)
+            dateLbl.text = dateString
+        }
+        locationLbl.text = event?.location
+        priceLbl.text = "$\(event?.price ?? 0)"
+    }
+    @IBAction func buyNowBtn(_ sender: Any) {
+        print(event?.name ?? "nill")
     }
 }

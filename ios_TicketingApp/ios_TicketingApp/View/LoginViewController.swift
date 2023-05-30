@@ -17,7 +17,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        passwordTextField.isSecureTextEntry = true
     }
 
     @IBAction func loginButtonPressed(_ sender: Any) {
@@ -31,27 +30,9 @@ class LoginViewController: UIViewController {
                     return
                 }
             }
-            let alert = UIAlertController(title: "Invalid Input", message: "Email or Password not found", preferredStyle: .alert)
-
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "This closes alert"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
-            }))
-
-            self.present(alert, animated: true, completion: nil)
             emailTextField.text = ""
             passwordTextField.text = ""
         }
-        else{
-            let alert = UIAlertController(title: "Invalid Input", message: "All fields must be completed", preferredStyle: .alert)
-
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "This closes alert"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
-            }))
-
-            self.present(alert, animated: true, completion: nil)
-            return
-        }
-        
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

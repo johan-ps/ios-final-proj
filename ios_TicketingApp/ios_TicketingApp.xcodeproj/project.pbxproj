@@ -30,9 +30,8 @@
 		76EF58B12A0A0A1000D1EBF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58B02A0A0A1000D1EBF4 /* Assets.xcassets */; };
 		76EF58B42A0A0A1000D1EBF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58B22A0A0A1000D1EBF4 /* LaunchScreen.storyboard */; };
 		76EF58BF2A0A0CE600D1EBF4 /* up-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 76EF58BE2A0A0CE600D1EBF4 /* up-2.png */; };
-		794BBD0D2A25A44200CDA103 /* Barcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 794BBD0C2A25A44200CDA103 /* Barcode.png */; };
-		794BBD0F2A25AA0200CDA103 /* NewTicket.png in Resources */ = {isa = PBXBuildFile; fileRef = 794BBD0E2A25AA0200CDA103 /* NewTicket.png */; };
-		794BBD112A25AAAA00CDA103 /* NewNewTicket.png in Resources */ = {isa = PBXBuildFile; fileRef = 794BBD102A25AAAA00CDA103 /* NewNewTicket.png */; };
+		BD5E90D52A259AF000F1944D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E90D42A259AF000F1944D /* Event.swift */; };
+		BD5E90D72A259F4300F1944D /* Events.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD5E90D62A259F4300F1944D /* Events.txt */; };
 		BD692D312A2469F300121EF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD692D302A2469F300121EF5 /* User.swift */; };
 		BD692D332A246C9600121EF5 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD692D322A246C9600121EF5 /* FileReader.swift */; };
 		BD692D362A246D8600121EF5 /* UserCredentials.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD692D352A246D8600121EF5 /* UserCredentials.txt */; };
@@ -65,9 +64,8 @@
 		76EF58B32A0A0A1000D1EBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76EF58B52A0A0A1000D1EBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76EF58BE2A0A0CE600D1EBF4 /* up-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-2.png"; sourceTree = "<group>"; };
-		794BBD0C2A25A44200CDA103 /* Barcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barcode.png; sourceTree = "<group>"; };
-		794BBD0E2A25AA0200CDA103 /* NewTicket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewTicket.png; sourceTree = "<group>"; };
-		794BBD102A25AAAA00CDA103 /* NewNewTicket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewNewTicket.png; sourceTree = "<group>"; };
+		BD5E90D42A259AF000F1944D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		BD5E90D62A259F4300F1944D /* Events.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Events.txt; sourceTree = "<group>"; };
 		BD692D302A2469F300121EF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BD692D322A246C9600121EF5 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 		BD692D352A246D8600121EF5 /* UserCredentials.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = UserCredentials.txt; sourceTree = "<group>"; };
@@ -138,9 +136,6 @@
 		76EF58BB2A0A0C8B00D1EBF4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				794BBD102A25AAAA00CDA103 /* NewNewTicket.png */,
-				794BBD0E2A25AA0200CDA103 /* NewTicket.png */,
-				794BBD0C2A25A44200CDA103 /* Barcode.png */,
 				76A5C4CB2A21C84200F7098D /* BackgroundGradient.png */,
 				763E5CE72A1C6867002206E2 /* TicketBackground.png */,
 				76EF58BE2A0A0CE600D1EBF4 /* up-2.png */,
@@ -160,6 +155,7 @@
 				BD692D302A2469F300121EF5 /* User.swift */,
 				BD692D322A246C9600121EF5 /* FileReader.swift */,
 				BD692D372A248D2600121EF5 /* FileWriter.swift */,
+				BD5E90D42A259AF000F1944D /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +163,7 @@
 		BD692D342A246D5700121EF5 /* TextFiles */ = {
 			isa = PBXGroup;
 			children = (
+				BD5E90D62A259F4300F1944D /* Events.txt */,
 			);
 			path = TextFiles;
 			sourceTree = "<group>";
@@ -231,19 +228,17 @@
 			files = (
 				BD692D362A246D8600121EF5 /* UserCredentials.txt in Resources */,
 				76EF58B42A0A0A1000D1EBF4 /* LaunchScreen.storyboard in Resources */,
-				794BBD0F2A25AA0200CDA103 /* NewTicket.png in Resources */,
 				763E5CE62A1C67CF002206E2 /* ConcertBackground.png in Resources */,
 				76A5C4BD2A1E409300F7098D /* Login.png in Resources */,
 				76A5C4CC2A21C84300F7098D /* BackgroundGradient.png in Resources */,
 				76A5C4B82A1E3DF900F7098D /* 2.png in Resources */,
-				794BBD0D2A25A44200CDA103 /* Barcode.png in Resources */,
 				76EF58B12A0A0A1000D1EBF4 /* Assets.xcassets in Resources */,
+				BD5E90D72A259F4300F1944D /* Events.txt in Resources */,
 				763E5CE82A1C6867002206E2 /* TicketBackground.png in Resources */,
 				76EF58AF2A0A0A0E00D1EBF4 /* Main.storyboard in Resources */,
 				76A5C4BE2A1E409300F7098D /* Signup.png in Resources */,
 				76EF58BF2A0A0CE600D1EBF4 /* up-2.png in Resources */,
 				76A5C4BA2A1E3FAF00F7098D /* LoginBackground.png in Resources */,
-				794BBD112A25AAAA00CDA103 /* NewNewTicket.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +257,7 @@
 				76A5C4C42A1E52FF00F7098D /* AccountDetailsViewController.swift in Sources */,
 				76A5C4C82A1E534600F7098D /* TicketPriceViewController.swift in Sources */,
 				763E5CEB2A1C690D002206E2 /* TicketViewController.swift in Sources */,
+				BD5E90D52A259AF000F1944D /* Event.swift in Sources */,
 				76EF58AC2A0A0A0E00D1EBF4 /* ViewController.swift in Sources */,
 				76A5C4C02A1E52B100F7098D /* UserConcertsViewController.swift in Sources */,
 				76A5C4C62A1E532200F7098D /* TicketInformationViewController.swift in Sources */,
