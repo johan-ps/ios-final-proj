@@ -100,17 +100,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConcertBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSY-Eq-sRh">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR UPCOMING GIGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nko-YQ-PeT">
-                                <rect key="frame" x="20" y="107.66666666666667" width="353" height="32.666666666666671"/>
+                                <rect key="frame" x="20" y="127.66666666666667" width="353" height="32.666666666666671"/>
                                 <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="114" translatesAutoresizingMaskIntoConstraints="NO" id="6td-vm-4mx">
-                                <rect key="frame" x="20" y="50" width="353" height="27.666666666666671"/>
+                                <rect key="frame" x="20" y="70" width="353" height="27.666666666666671"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qb-J0-S0S">
                                         <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="27.666666666666668"/>
@@ -144,7 +141,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-kk-EFI">
-                                <rect key="frame" x="20" y="160.33333333333331" width="353" height="631.66666666666674"/>
+                                <rect key="frame" x="20" y="180.33333333333331" width="353" height="611.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userConcertsCell" id="ZlV-4l-90D">
@@ -166,6 +163,9 @@
                                     <action selector="goToTicketTESTBtnPressed:" destination="X1J-BS-0zR" eventType="touchUpInside" id="Ubf-e9-uJH"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConcertBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSY-Eq-sRh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hk6-vY-meX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -173,15 +173,18 @@
                             <constraint firstItem="nko-YQ-PeT" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="3dA-zV-iEY"/>
                             <constraint firstItem="EbI-kk-EFI" firstAttribute="top" secondItem="nko-YQ-PeT" secondAttribute="bottom" constant="20" id="8Yv-Pa-OxR"/>
                             <constraint firstItem="EbI-kk-EFI" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="IUv-dd-zJZ"/>
+                            <constraint firstItem="nko-YQ-PeT" firstAttribute="top" secondItem="6td-vm-4mx" secondAttribute="bottom" constant="30" id="NeC-2C-2y4"/>
                             <constraint firstAttribute="bottom" secondItem="iSY-Eq-sRh" secondAttribute="bottom" id="ODN-wx-r15"/>
-                            <constraint firstItem="6td-vm-4mx" firstAttribute="top" secondItem="WNH-Ia-zPT" secondAttribute="top" constant="50" id="PNM-GS-xeT"/>
                             <constraint firstItem="iSY-Eq-sRh" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" id="QxM-ts-Opq"/>
                             <constraint firstItem="nko-YQ-PeT" firstAttribute="top" secondItem="6td-vm-4mx" secondAttribute="bottom" constant="30" id="Ryi-Qc-6M0"/>
+                            <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="6td-vm-4mx" secondAttribute="trailing" constant="20" id="VTj-n8-jRu"/>
                             <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="EbI-kk-EFI" secondAttribute="trailing" constant="20" id="dIz-N3-Tn7"/>
+                            <constraint firstItem="6td-vm-4mx" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="eQY-G7-pET"/>
                             <constraint firstItem="6td-vm-4mx" firstAttribute="leading" secondItem="hk6-vY-meX" secondAttribute="leading" constant="20" id="kPv-wc-Cdg"/>
                             <constraint firstItem="nko-YQ-PeT" firstAttribute="top" secondItem="6td-vm-4mx" secondAttribute="bottom" constant="30" id="lmp-E7-C0u"/>
                             <constraint firstItem="iSY-Eq-sRh" firstAttribute="trailing" secondItem="hk6-vY-meX" secondAttribute="trailing" id="pUx-ZR-j5I"/>
                             <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="6td-vm-4mx" secondAttribute="trailing" constant="20" id="pyJ-kG-CKT"/>
+                            <constraint firstItem="6td-vm-4mx" firstAttribute="top" secondItem="hk6-vY-meX" secondAttribute="top" constant="70" id="rWo-g9-EM9"/>
                             <constraint firstItem="hk6-vY-meX" firstAttribute="trailing" secondItem="nko-YQ-PeT" secondAttribute="trailing" constant="20" id="tOB-TX-TUe"/>
                             <constraint firstAttribute="bottom" secondItem="EbI-kk-EFI" secondAttribute="bottom" constant="50" id="teG-YC-YCE"/>
                             <constraint firstItem="iSY-Eq-sRh" firstAttribute="top" secondItem="hk6-vY-meX" secondAttribute="top" id="zRY-lI-edu"/>
@@ -425,6 +428,9 @@
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vud-IP-nVJ">
                                                 <rect key="frame" x="0.0" y="64.333333333333314" width="353" height="32"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="quantityIncrease:" destination="DtN-uC-pkl" eventType="valueChanged" id="9pw-D3-yZO"/>
+                                                </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$XXX.XX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv8-fy-6yS">
                                                 <rect key="frame" x="0.0" y="121.33333333333333" width="353" height="63.666666666666671"/>

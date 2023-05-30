@@ -40,10 +40,10 @@ class TicketPriceViewController:UIViewController{
 
     }
     @IBAction func quantityIncrease(_ sender: Any) {
-        if ticketQuantity < 1{
-            return
-        }
-        else{
+        //if ticketQuantity < 1{
+          //  return
+        //}
+      //  else{
             switch ticketStepper.value {
             case 1.0:
                 // add your item here
@@ -60,7 +60,7 @@ class TicketPriceViewController:UIViewController{
             totalPriceLabel.text = "\(totalPrice)"
             ticketQuantityLabel.text = "\(ticketQuantity)x tickets @ $\(event?.price ?? 0)"
             
-        }
+        //}
     }
     @IBAction func confirmBtnPressed(_ sender: Any) {
         if let currentEvent = event{
@@ -70,6 +70,8 @@ class TicketPriceViewController:UIViewController{
                 currentUser.addTicket(ticket)
                 let fileWriter = FileWriter()
                 fileWriter.writeUserTickets(user: currentUser)
+                print("\(user?.tickets.count)")
+                
             }
         }
         
@@ -80,6 +82,7 @@ class TicketPriceViewController:UIViewController{
         if segue.identifier == "goToOrderConfirmed" {
             if let upcomingGigsVC = segue.destination as? TicketPurchasedViewController {
                 upcomingGigsVC.user = self.user //ADD BACK IN
+                //upcomingGigsVC.
             }
         }
     }

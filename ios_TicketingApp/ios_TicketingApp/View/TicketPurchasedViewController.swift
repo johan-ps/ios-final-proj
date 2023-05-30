@@ -10,6 +10,7 @@ class TicketPurchasedViewController:UIViewController{
     override func viewDidLoad(){
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
+        //print("\(user?.tickets.count)")
 
     }
     
@@ -17,11 +18,12 @@ class TicketPurchasedViewController:UIViewController{
         if segue.identifier == "goToMyConcerts" {
             if let accountDetailsVC = segue.destination as? UserConcertsViewController {
                 accountDetailsVC.user = self.user //ADD BACK IN
+               // accountDetailsVC.userConcerts += self.user!.tickets
             }
         }
         else if segue.identifier == "goToHome" {
             if let accountDetailsVC = segue.destination as? ConcertsViewController {
-                //accountDetailsVC.currentUser = self.user ADD BACK IN
+                accountDetailsVC.user = self.user
             }
         }
     }
